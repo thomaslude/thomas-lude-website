@@ -21,7 +21,7 @@ SITE_NAME  = "Thomas Lude – Kartenlegen am Bodensee"
 PHONE      = "+49 1523 3701979"       # echte Nummer (Stand: Sep 2026)
 PHONE_HINT = ""                        # Hinweis-Text neben der Nummer (leer = keiner)
 WHATSAPP   = "4915233701979"          # nur Ziffern, ohne + und Leerzeichen
-EMAIL      = "info@thomas-lude.de"    # DUMMY
+EMAIL      = "t.lude21@gmail.com"     # bestätigt aktiv (bisher auf alter Seite genutzt)
 CITY       = "Friedrichshafen"
 AREA       = "Friedrichshafen & Bodensee"
 SHOW_GENERATION = False               # „Kartenlegen in 3. Generation" erst nach Bestätigung auf True setzen
@@ -1545,14 +1545,18 @@ def impressum_body():
 <section class="section">
   <div class="container prose">
     <h1>Impressum</h1>
-    <!-- DUMMY: Vollständige Angaben gemäß § 5 DDG eintragen, bevor die Website live geht! -->
-    <div class="notice-box">
-      <p><strong>Platzhalter:</strong> Hier das vollständige Impressum eintragen (Angaben gemäß § 5 DDG): Name, Anschrift, Kontakt, ggf. USt-IdNr., Verantwortlicher für den Inhalt.</p>
-    </div>
     <h2>Angaben gemäß § 5 DDG</h2>
-    <p>Thomas Lude<br>[Straße und Hausnummer]<br>88045 Friedrichshafen</p>
+    <p>Thomas Lude<br>Hindenburgstr. 1<br>88045 Friedrichshafen</p>
     <h2>Kontakt</h2>
     <p>Telefon: %s %s<br>E-Mail: %s</p>
+    <h2>Umsatzsteuer</h2>
+    <p>Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer erhoben und nicht ausgewiesen.</p>
+    <h2>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h2>
+    <p>Thomas Lude, Anschrift wie oben.</p>
+    <h2>Urheberrecht</h2>
+    <p>Die durch den Seitenbetreiber erstellten Inhalte, Bilder und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Erstellers.</p>
+    <h2>Haftungshinweis</h2>
+    <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
   </div>
 </section>
 """ % (PHONE, PHONE_HINT, EMAIL)
@@ -1562,15 +1566,13 @@ def datenschutz_body():
 <section class="section">
   <div class="container prose">
     <h1>Datenschutzerklärung</h1>
-    <!-- DUMMY: Datenschutzerklärung passend zu den tatsächlich eingesetzten Diensten erstellen. -->
-    <div class="notice-box">
-      <p><strong>Platzhalter:</strong> Hier die vollständige Datenschutzerklärung eintragen – abgestimmt auf die tatsächlich eingesetzten Dienste (Hosting, Formulardienst, WhatsApp-Verlinkung). Keine Cookies, kein Tracking und keine externen Fonts sind auf dieser Website aktiv.</p>
-    </div>
     <h2>1. Verantwortlicher</h2>
-    <p>Thomas Lude, [Straße und Hausnummer], 88045 Friedrichshafen, E-Mail: %s</p>
+    <p>Thomas Lude, Hindenburgstr. 1, 88045 Friedrichshafen, E-Mail: %s</p>
     <h2>2. Hosting</h2>
-    <p>Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf werden technisch bedingt Verbindungsdaten (z. B. IP-Adresse) verarbeitet. Details siehe Datenschutzhinweise des Hosters.</p>
-    <h2>3. Kontaktaufnahme</h2>
+    <p>Diese Website wird über GitHub Pages (GitHub Inc.) bereitgestellt. Beim Aufruf werden technisch bedingt Verbindungsdaten (z. B. IP-Adresse) verarbeitet. Details siehe die Datenschutzhinweise von GitHub.</p>
+    <h2>3. Kontaktformular</h2>
+    <p>Das Kontaktformular wird über den Dienst Formspree (Formspree, Inc.) technisch abgewickelt, damit deine Anfrage per E-Mail bei Thomas ankommt. Es werden nur die von dir eingegebenen Daten übertragen. Details siehe die Datenschutzhinweise von Formspree.</p>
+    <h2>4. Kontaktaufnahme</h2>
     <p>Bei Kontaktaufnahme per E-Mail, Telefon oder WhatsApp werden die angegebenen Daten ausschließlich zur Bearbeitung der Anfrage verarbeitet und nicht an Dritte weitergegeben.</p>
   </div>
 </section>
