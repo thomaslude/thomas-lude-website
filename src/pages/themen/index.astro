@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pages = (await getCollection('landingpages')).filter((p) => !p.data.draft);
+---
+<BaseLayout title="Themen | Thomas Lude" description="Kartenlegen zu unterschiedlichen Lebensthemen.">
+  <h1>Themen</h1>
+  <ul class="topic-list">
+    {pages.map((p) => (
+      <li><a href={`/themen/${p.slug}`}>{p.data.title}</a></li>
+    ))}
+  </ul>
+</BaseLayout>

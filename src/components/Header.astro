@@ -1,0 +1,19 @@
+---
+const navItems = [
+  { href: '/', label: 'Start' },
+  { href: '/ueber-mich', label: 'Über mich' },
+  { href: '/leistungen', label: 'Leistungen' },
+  { href: '/themen', label: 'Themen' },
+  { href: '/kontakt', label: 'Kontakt' },
+];
+---
+<header class="site-header">
+  <a class="logo" href="/">Thomas Lude</a>
+  <nav>
+    <ul>
+      {navItems.map((item) => (
+        <li><a href={item.href}>{item.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+</header>
