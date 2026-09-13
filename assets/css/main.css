@@ -418,6 +418,7 @@ p { margin: 0 0 1.1em; }
   padding: clamp(26px, 4vw, 38px);
 }
 .form-card label { display: block; font-weight: 600; color: var(--dark); font-size: .93rem; margin: 0 0 5px; }
+.form-card label .opt { font-weight: 400; color: var(--muted); }
 .form-card .field { margin-bottom: 16px; }
 .form-card input[type="text"],
 .form-card input[type="email"],

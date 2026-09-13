@@ -21,10 +21,10 @@ SITE_NAME  = "Thomas Lude – Kartenlegen am Bodensee"
 PHONE      = "+49 1523 3701979"       # echte Nummer (Stand: Sep 2026)
 PHONE_HINT = ""                        # Hinweis-Text neben der Nummer (leer = keiner)
 WHATSAPP   = "4915233701979"          # nur Ziffern, ohne + und Leerzeichen
-EMAIL      = "t.lude21@gmail.com"     # bestätigt aktiv (bisher auf alter Seite genutzt)
+EMAIL      = "info@thomas-lude.de"    # bestätigt aktive Domain-Mailadresse (thomas@thomas-lude.de ebenfalls aktiv)
 CITY       = "Friedrichshafen"
 AREA       = "Friedrichshafen & Bodensee"
-SHOW_GENERATION = False               # „Kartenlegen in 3. Generation" erst nach Bestätigung auf True setzen
+SHOW_GENERATION = True                 # „Kartenlegen in 3. Generation" von Thomas bestätigt
 # ----------------------------------------------------------------------------
 
 TEL_HREF = "tel:" + PHONE.replace(" ", "").replace("-", "")
@@ -462,7 +462,7 @@ def home_body():
       <h2>Ich bin Thomas.</h2>
       <p><strong>Und ich sage dir nicht einfach das, was du hören möchtest.</strong></p>
       <p>Seit vielen Jahren begleite ich Menschen, wenn das Leben Fragen stellt. Die Karten können Zusammenhänge, Tendenzen und Möglichkeiten aufzeigen – ehrlich, klar und einfühlsam. Was du daraus machst, bleibt deine Entscheidung.</p>
-      <p>Kartenlegen ist für mich eine Berufung, die schon in meiner Familie verwurzelt ist. Heute verbinde ich diese Tradition mit meiner Erfahrung, meiner Intuition und einer bodenständigen, lebensnahen Art.</p>
+      <p>Kartenlegen ist für mich eine Berufung, die schon in meiner Familie verwurzelt ist – ich lege die Karten in dritter Generation. Heute verbinde ich diese Tradition mit meiner Erfahrung, meiner Intuition und einer bodenständigen, lebensnahen Art.</p>
       <p class="tag-note">Kartenleger · Friedrichshafen am Bodensee</p>
       <div class="cta-row">
         <a class="btn btn-gold" href="/ueber-thomas-lude/">Mehr über Thomas →</a>
@@ -1247,8 +1247,7 @@ def ueber_body():
 <section class="section">
   <div class="container prose">
     <h2>Wie Thomas zum Kartenlegen kam</h2>
-    <p>Das Kartenlegen wurde Thomas nicht antrainiert – es liegt in der Familie. Was er daraus mitgenommen hat, ist vor allem eine Haltung: Die Karten sind kein Orakel, das einem das Leben abnimmt. Sie sind ein Werkzeug, um gemeinsam hinzuschauen.</p>
-    <!-- HINWEIS: Details zur Familientradition („3. Generation") hier ergänzen, sobald Thomas sie bestätigt hat. -->
+    <p>Das Kartenlegen wurde Thomas nicht antrainiert – es liegt in der Familie. Er legt die Karten in dritter Generation und trägt damit eine Tradition weiter, die in seiner Familie über Jahrzehnte gewachsen ist. Was er daraus mitgenommen hat, ist vor allem eine Haltung: Die Karten sind kein Orakel, das einem das Leben abnimmt. Sie sind ein Werkzeug, um gemeinsam hinzuschauen.</p>
     <p>Seit vielen Jahren begleitet er Menschen, wenn das Leben Fragen stellt: bei Liebe und Beziehung, bei Entscheidungen, bei Veränderungen. Heute berät er in Friedrichshafen am Bodensee – persönlich am Tisch, am Telefon und auf Events.</p>
     <h2>Wie er arbeitet</h2>
     <p>Ruhig, aufmerksam und direkt. Thomas hört zu, bevor er legt. Er sagt, was er sieht – auch wenn es nicht immer das ist, was man gern hören möchte. Und er lässt dich mit etwas Konkretem gehen, nicht mit vagen Andeutungen.</p>
@@ -1448,6 +1447,7 @@ def kontakt_body():
       <form action="https://formspree.io/f/DEIN-FORMULAR-CODE" method="post">
         <div class="field"><label for="k-name">Name</label><input type="text" id="k-name" name="name" required></div>
         <div class="field"><label for="k-mail">E-Mail</label><input type="email" id="k-mail" name="email" required></div>
+        <div class="field"><label for="k-rueckruf">Rückrufnummer <span class="opt">(optional)</span></label><input type="tel" id="k-rueckruf" name="rueckrufnummer" placeholder="Für einen Rückruf, falls gewünscht"></div>
         <div class="field"><label for="k-thema">Worum geht es?</label>
           <select id="k-thema" name="thema">
             <option value="">Bitte wählen</option>
@@ -1458,6 +1458,7 @@ def kontakt_body():
             <option value="sonstiges">Etwas anderes</option>
           </select>
         </div>
+        <div class="field"><label for="k-personen">Anzahl Personen <span class="opt">(bei Events/Gruppen)</span></label><input type="number" id="k-personen" name="personen" min="1" max="30"></div>
         <div class="field"><label for="k-nachricht">Deine Nachricht</label><textarea id="k-nachricht" name="nachricht" required></textarea></div>
         <div class="field check">
           <input type="checkbox" id="k-ds" name="datenschutz" required>
@@ -1550,7 +1551,7 @@ def impressum_body():
     <h2>Kontakt</h2>
     <p>Telefon: %s %s<br>E-Mail: %s</p>
     <h2>Umsatzsteuer</h2>
-    <p>Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer erhoben und nicht ausgewiesen.</p>
+    <p>Kleinunternehmer im Sinne von § 19 Abs. 1 UStG. Es wird daher keine Umsatzsteuer berechnet und nicht gesondert ausgewiesen.</p>
     <h2>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h2>
     <p>Thomas Lude, Anschrift wie oben.</p>
     <h2>Urheberrecht</h2>
