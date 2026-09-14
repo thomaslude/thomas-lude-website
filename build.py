@@ -100,7 +100,7 @@ FAQ_MAIN = [
     ("Wie lange dauert eine Kartenlegung?",
      "Das hängt von deinem Thema ab. Plane für eine persönliche Beratung etwa 45 bis 60 Minuten ein. Die genaue Dauer besprecht ihr am besten direkt bei der Terminanfrage."),
     ("Was kostet eine Beratung?",
-     "Die aktuellen Preise erfährst du direkt bei Thomas – am schnellsten per WhatsApp oder telefonisch. So bleibt alles transparent, bevor du einen Termin vereinbarst."),
+     "30 Minuten 79 €, 60 Minuten 149 € (das meistgewählte Format), 90 Minuten 219 €, 120 Minuten 289 € – persönlich wie telefonisch. Zeigt sich im Gespräch mehr Bedarf, ist eine Verlängerung unkompliziert möglich."),
     ("Muss ich an Kartenlegen glauben?",
      "Nein. Du musst an nichts glauben. Viele kommen einfach mit einer offenen Frage und der Bereitschaft, einen anderen Blick darauf zu werfen. Das reicht völlig."),
     ("Kann ich Thomas auch telefonisch sprechen?",
@@ -728,7 +728,7 @@ LANDING_PAGES = [
   <li><strong>Mitnehmen, was passt</strong> – was du daraus machst, bleibt deine Entscheidung.</li>
 </ol>
 <h2>Wo findet die Beratung statt?</h2>
-<p>In Friedrichshafen am Bodensee – den genauen Beratungsort bekommst du bei der Terminvereinbarung. Dauer und Preise besprecht ihr direkt bei der Anfrage, transparent und ohne Verpflichtung. Wenn du nicht persönlich kommen kannst, ist eine <a href="/kartenlegen-telefonisch/">Beratung am Telefon</a> genauso möglich.</p>
+<p>In Friedrichshafen am Bodensee – den genauen Beratungsort bekommst du bei der Terminvereinbarung. 30 Minuten 79 €, 60 Minuten 149 €, 90 Minuten 219 €, 120 Minuten 289 €. Wenn du nicht persönlich kommen kannst, ist eine <a href="/kartenlegen-telefonisch/">Beratung am Telefon</a> zum gleichen Preis genauso möglich.</p>
 """,
         "faq": [
             ("Muss ich mich auf die Beratung vorbereiten?",
@@ -938,7 +938,7 @@ LANDING_PAGES = [
   <li>Für alle, die es besonders diskret halten möchten</li>
 </ul>
 <h2>Dauer, Preis &amp; Diskretion</h2>
-<p>Plane etwa 45 bis 60 Minuten ein. Die aktuellen Preise und Zahlungsmöglichkeiten erfährst du direkt bei der Anfrage – transparent, bevor du buchst. Was du am Telefon besprichst, bleibt vertraulich.</p>
+<p>30 Minuten 79 €, 60 Minuten 149 €, 90 Minuten 219 €, 120 Minuten 289 € – gleicher Preis wie bei einer persönlichen Beratung. Zahlungsmöglichkeiten bespricht ihr bei der Terminvereinbarung. Was du am Telefon besprichst, bleibt vertraulich.</p>
 """,
         "faq": [
             ("Funktioniert Kartenlegen am Telefon wirklich?",
@@ -1134,8 +1134,15 @@ LANDING_PAGES = [
 </ul>
 <h2>Optional: ein Moment für das Brautpaar</h2>
 <p>Auf Wunsch nimmt sich Thomas vor oder während der Feier auch einen ruhigen, privaten Moment nur für euch beide – ein symbolischer Blick auf das, was vor euch liegt.</p>
+<h2>Preis</h2>
+<ul class="tick-list">
+  <li><strong>Ab 590 €</strong> – bis ca. 3 Stunden Anwesenheit</li>
+  <li><strong>Ab 690 €</strong> – bis ca. 4 Stunden Anwesenheit</li>
+  <li>Verlängerung je angefangene Stunde: 150 €</li>
+  <li>Anfahrt im Bodensee-Radius inklusive, darüber hinaus nach Entfernung</li>
+</ul>
 <h2>So läuft die Planung ab</h2>
-<p>Schreib Thomas kurz, wann und wo eure Feier stattfindet und wie viele Gäste ihr erwartet. Ablauf, Dauer und Kosten bespricht ihr gemeinsam – transparent und ohne Verpflichtung.</p>
+<p>Schreib Thomas kurz, wann und wo eure Feier stattfindet und wie viele Gäste ihr erwartet. Individuelles Setup, mehr Zeit oder größere Gruppen besprecht ihr gemeinsam.</p>
 <h2>Warum Thomas Lude</h2>
 <p>Kein lautes Entertainment-Programm, sondern ein stilvoller, achtsamer Akzent, der zu eurem Fest passt statt es zu überlagern.</p>
 """,
@@ -1168,8 +1175,15 @@ LANDING_PAGES = [
   <li>Ein Gesprächsanlass, der Menschen zusammenbringt</li>
   <li>Freiwillige Teilnahme, kein Druck</li>
 </ul>
+<h2>Preis</h2>
+<ul class="tick-list">
+  <li><strong>Ab 590 €</strong> – bis ca. 3 Stunden Anwesenheit</li>
+  <li><strong>Ab 690 €</strong> – bis ca. 4 Stunden Anwesenheit</li>
+  <li>Verlängerung je angefangene Stunde: 150 €</li>
+  <li>Anfahrt im Bodensee-Radius inklusive, darüber hinaus nach Entfernung</li>
+</ul>
 <h2>So läuft die Planung ab</h2>
-<p>Schreib Thomas kurz die Rahmendaten eurer Veranstaltung – Ort, Datum, ungefähre Gästezahl. Ablauf, Dauer und Kosten klärt ihr gemeinsam, transparent und unverbindlich.</p>
+<p>Schreib Thomas kurz die Rahmendaten eurer Veranstaltung – Ort, Datum, ungefähre Gästezahl. Individuelles Setup oder mehr Zeit besprecht ihr gemeinsam.</p>
 <h2>Warum Thomas Lude</h2>
 <p>Bodenständig statt abgehoben, diskret statt aufdringlich – ein Programmpunkt, der zu einem professionellen Rahmen passt.</p>
 """,
@@ -1267,7 +1281,8 @@ def events_body():
       <li><strong>Abstimmen</strong> – Thomas meldet sich und klärt mit euch Ablauf, Dauer und Rahmen.</li>
       <li><strong>Erleben</strong> – Thomas kommt zu euch. Jede Person bekommt ihren eigenen Moment mit den Karten.</li>
     </ol>
-    <p>Thomas kommt in eure Ferienwohnung, ins Hotel, zu euch nach Hause oder in eine Location eurer Wahl. Bitte stimmt die Nutzung vorab mit eurer Unterkunft oder Location ab. Gruppengröße, Zeitbedarf, Einsatzgebiet und Paketpreise werden bei der Anfrage geklärt – abhängig von Anlass und Personenzahl.</p>
+    <p>Thomas kommt in eure Ferienwohnung, ins Hotel, zu euch nach Hause oder in eine Location eurer Wahl. Bitte stimmt die Nutzung vorab mit eurer Unterkunft oder Location ab.</p>
+    <p><strong>Ab 449 €</strong> für bis zu 6 Personen (ca. 2,5–3 Stunden), jede weitere Person 59 €. Anfahrt im Bodensee-Radius inklusive, darüber hinaus nach Vereinbarung. Genauer Ablauf, Zeitbedarf und Einsatzgebiet werden bei der Anfrage geklärt.</p>
   </div>
 </section>
 %(cta)s
@@ -1317,7 +1332,7 @@ def jga_body():
       <li>Geeignet für kleine und mittlere Gruppen – Größe und Zeitbedarf bei der Anfrage abstimmen</li>
       <li>Einsatz rund um den Bodensee, nach Absprache auch darüber hinaus</li>
       <li>Möglich in Ferienwohnung, Hotel, privater Location oder einem separaten Raum – bitte vorab mit der Unterkunft abstimmen</li>
-      <li>Paketpreise abhängig von Gruppengröße und Dauer – ihr bekommt vorab ein klares Angebot</li>
+      <li>Ab 449 € für bis zu 6 Personen (ca. 2,5–3 Stunden), jede weitere Person 59 €</li>
     </ul>
     <p>Und keine Sorge: Es gibt keine düsteren Prophezeiungen und kein Theater. Thomas ist bodenständig, humorvoll und diskret – genau richtig für einen Abend unter Freundinnen.</p>
   </div>
@@ -1397,7 +1412,7 @@ def jga_body():
             ("Wo findet der Kartenabend statt?",
              "Überall dort, wo ihr seid: Ferienwohnung, Hotel, zuhause oder eine angemietete Location. Bitte stimmt die Nutzung vorab mit der Unterkunft ab."),
             ("Was kostet ein JGA-Kartenabend?",
-             "Es gibt Paketpreise je nach Gruppengröße und Dauer. Ihr bekommt bei der Anfrage ein transparentes Angebot – ohne versteckte Kosten."),
+             "Ab 449 € für bis zu 6 Personen (ca. 2,5–3 Stunden), jede weitere Person 59 €. Größere Gruppen oder mehr Zeit besprecht ihr einfach bei der Anfrage."),
             ("Müssen wir an Kartenlegen glauben?",
              "Nein. Neugier reicht völlig. Der Abend funktioniert auch wunderbar, wenn manche erst mal skeptisch sind – oft sind das die größten Fans am Ende."),
         ]),
@@ -1443,7 +1458,8 @@ def tier_body():
       <li>Zeiten, in denen ein Tier einfach Ruhe und Zuwendung braucht</li>
     </ul>
     <h2>Wie eine Begleitung abläuft</h2>
-    <p>Immer im Tempo des Tieres. Thomas nimmt sich Zeit, das Tier kennenzulernen, und arbeitet ruhig und ohne Druck. Was genau passiert und wie lange es dauert, besprecht ihr vorab – denn jedes Tier ist anders.</p>
+    <p>Immer im Tempo des Tieres. Thomas nimmt sich Zeit, das Tier kennenzulernen, und arbeitet ruhig und ohne Druck. Was genau passiert, besprecht ihr vorab – denn jedes Tier ist anders.</p>
+    <p><strong>Ca. 45–60 Minuten · 149 €.</strong></p>
     <h2>Was Thomas ausdrücklich nicht verspricht</h2>
     <p>Keine Heilung, keine Schmerzlinderung, keine Behandlung von Krankheiten. Die energetische Begleitung ist ein ergänzendes Angebot – die Gesundheit eures Tieres gehört in tierärztliche Hände.</p>
   </div>
@@ -1686,7 +1702,7 @@ def kontakt_body():
         <li>Persönliche Beratungen in Friedrichshafen – Adresse bei der Terminvereinbarung</li>
         <li>Telefonische Beratung nach Termin, von überall</li>
         <li>Kartenabende für Gruppen rund um den Bodensee</li>
-        <li>Preise erfährst du transparent bei der Anfrage</li>
+        <li>30 Min. 79 € · 60 Min. 149 € · 90 Min. 219 € · 120 Min. 289 €</li>
         <li>Alles, was ihr besprecht, bleibt diskret</li>
       </ul>
     </div>
