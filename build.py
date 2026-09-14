@@ -9,9 +9,12 @@ Danach:  Ordnerinhalt nach GitHub pushen (siehe README.md).
 ZENTRALE KONTAKTDATEN – nur hier unten an einer Stelle pflegen:
 ACHTUNG: Alle Werte sind aktuell DUMMYS und müssen vor dem Go-Live ersetzt werden!
 """
+import html
 import json
 import os
 import shutil
+
+from blog_content import BLOG_POSTS
 
 # ----------------------------------------------------------------------------
 # ZENTRALE EINSTELLUNGEN (DUMMY-WERTE – vor Go-Live ersetzen!)
@@ -64,6 +67,12 @@ IMG_META = {
     "thomas-lude-ueber-thomas-kartenlegen":             (768, 1376),
     "thomas-lude-kartenlegen-jga-bodensee":             (1536, 1024),
     "thomas-lude-kartenlegen-beratung-am-tisch":        (688, 1406),
+    "blog-hellfuehligkeit-frage-vor-karten":            (1536, 1024),
+    "blog-feinfuehliger-mensch-haus":                   (1536, 1024),
+    "blog-geboren-mit-der-gabe":                        (1536, 1024),
+    "blog-geister-die-ich-rief":                        (1536, 1024),
+    "blog-verlust-wiedergeburt-sinnfragen":             (1536, 1024),
+    "blog-karmische-aufgaben":                          (1536, 1024),
 }
 
 def img(base, alt, sizes="(max-width: 768px) 100vw, 50vw", loading="lazy", fetchpriority="", css_class=""):
@@ -146,6 +155,7 @@ NAV = [
     ("/tier-mensch/", "Tier &amp; Mensch"),
     ("/ueber-thomas-lude/", "Über mich"),
     ("/erfahrungen/", "Erfahrungen"),
+    ("/blog/", "Blog"),
     ("/kontakt-termin/", "Kontakt"),
 ]
 
@@ -300,6 +310,7 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
         <li><a href="/tier-mensch/">Tier &amp; Mensch</a></li>
         <li><a href="/ueber-thomas-lude/">Über Thomas</a></li>
         <li><a href="/ratgeber/">Ratgeber</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
     </nav>
     <div>
@@ -604,6 +615,23 @@ def home_body():
   </div>
 </section>
 
+<!-- BLOG -->
+<section class="section section-white" id="blog">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Aus dem Blog</p>
+      <h2>Texte über Wahrnehmung, Räume und die Fragen dazwischen</h2>
+      <p class="lead">Persönliche Erfahrungen, ruhige Erklärungen und ehrliche Grenzen – für Menschen, die tiefer verstehen möchten, wie Thomas arbeitet.</p>
+    </div>
+    <div class="card-grid three">
+      %(blog_cards)s
+    </div>
+    <div class="center" style="margin-top:2.2rem;">
+      <a class="btn btn-outline-dark" href="/blog/">Alle Beiträge lesen</a>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -648,6 +676,7 @@ def home_body():
         "jga_img": img("thomas-lude-kartenlegen-jga-bodensee", "Kartenabend mit Thomas Lude bei einem Junggesellinnenabschied: Braut mit Schleier und Freundinnen am gedeckten Tisch"),
         "tier_img": img("thomas-lude-tierbegleitung-bodensee", "Thomas Lude legt einem entspannten Golden Retriever ruhig die Hände auf"),
         "stars": stars,
+        "blog_cards": "\n".join(blog_card(p) for p in BLOG_POSTS[:3]),
         "local_img": img("thomas-lude-kartenlegen-beratung-am-tisch", "Thomas Lude am Kartentisch mit Salzsteinlampe und Kerze in seinem Beratungsraum"),
         "faq": faq_html(FAQ_MAIN),
         "cta_img": img("thomas-lude-portrait-hund-friedrichshafen", "Thomas Lude lacht freundlich in die Kamera, sein Golden Retriever entspannt neben ihm"),
@@ -1676,6 +1705,188 @@ def erfahrungen_body():
     }
 
 # ----------------------------------------------------------------------------
+# BLOG
+# ----------------------------------------------------------------------------
+def blog_card(post, loading="lazy"):
+    tags = "".join('<span>%s</span>' % html.escape(t) for t in post["tags"][:2])
+    return """      <article class="card blog-card">
+        <a class="card-image" href="/blog/%(slug)s/">%(image)s</a>
+        <div class="card-body">
+          <div class="blog-tags">%(tags)s</div>
+          <h3><a href="/blog/%(slug)s/">%(title)s</a></h3>
+          <p>%(desc)s</p>
+          <div class="blog-card-meta">%(date)s · %(read)s Lesezeit</div>
+          <a class="link-more" href="/blog/%(slug)s/">Beitrag lesen</a>
+        </div>
+      </article>""" % {
+        "slug": post["slug"],
+        "image": img(post["image"], post["alt"], loading=loading),
+        "tags": tags,
+        "title": html.escape(post["title"]),
+        "desc": html.escape(post["desc"]),
+        "date": html.escape(post["date"]),
+        "read": html.escape(post["read_time"]),
+    }
+
+
+def blog_schema(post):
+    url = SITE_URL + "/blog/" + post["slug"] + "/"
+    image_url = SITE_URL + "/assets/img/" + post["image"] + "-full.webp"
+    return {
+        "@type": "BlogPosting",
+        "@id": url + "#artikel",
+        "headline": post["title"],
+        "description": post["desc"],
+        "image": [image_url],
+        "datePublished": post["iso_date"],
+        "dateModified": post["iso_date"],
+        "inLanguage": "de-DE",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "author": {"@id": SITE_URL + "/#thomas-lude"},
+        "publisher": {"@id": SITE_URL + "/#beratung"},
+        "keywords": post["tags"],
+    }
+
+
+def blog_overview_schema():
+    return {
+        "@type": "Blog",
+        "@id": SITE_URL + "/blog/#blog",
+        "name": "Blog von Thomas Lude",
+        "description": "Erfahrungen und Erklärungen zu Kartenlegen, Hellfühligkeit, Raumklärung, Verlust, Wiedergeburt und karmischen Aufgaben.",
+        "url": SITE_URL + "/blog/",
+        "inLanguage": "de-DE",
+        "blogPost": [
+            {"@type": "BlogPosting", "headline": p["title"], "url": SITE_URL + "/blog/" + p["slug"] + "/"}
+            for p in BLOG_POSTS
+        ],
+    }
+
+
+def blog_body():
+    featured = BLOG_POSTS[0]
+    rest = BLOG_POSTS[1:]
+    featured_tags = "".join('<span>%s</span>' % html.escape(t) for t in featured["tags"])
+    cards = "\n".join(blog_card(p) for p in rest)
+    return """
+<header class="page-hero">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Startseite</a> / <span>Blog</span></nav>
+    <p class="eyebrow">Blog &amp; Erfahrungen</p>
+    <h1>Texte über Karten, Hellfühligkeit und das, was Räume erzählen</h1>
+    <p class="lead">Persönliche Erfahrungen und ruhige Erklärungen von Thomas Lude – über Wahrnehmung, Raumklärung, Verlust, karmische Aufgaben und die Grenzen ehrlicher spiritueller Arbeit.</p>
+  </div>
+</header>
+
+<section class="section blog-feature-section">
+  <div class="container blog-feature">
+    <a class="blog-feature-image" href="/blog/%(featured_slug)s/">%(featured_image)s</a>
+    <div class="blog-feature-body">
+      <div class="blog-tags">%(featured_tags)s</div>
+      <h2><a href="/blog/%(featured_slug)s/">%(featured_title)s</a></h2>
+      <p class="lead">%(featured_lead)s</p>
+      <p class="blog-card-meta">%(featured_date)s · %(featured_read)s Lesezeit</p>
+      <a class="btn btn-gold" href="/blog/%(featured_slug)s/">Beitrag lesen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head left" style="text-align:left;">
+      <h2>Alle Beiträge</h2>
+      <p class="lead">Jeder Text ist so geschrieben, dass er für Menschen, Suchmaschinen und Antwortsysteme eigenständig verständlich ist.</p>
+    </div>
+    <div class="card-grid three">
+%(cards)s
+    </div>
+  </div>
+</section>
+%(cta)s
+""" % {
+        "featured_slug": featured["slug"],
+        "featured_image": img(featured["image"], featured["alt"], sizes="(max-width: 920px) 100vw, 52vw", loading="eager", fetchpriority="high"),
+        "featured_tags": featured_tags,
+        "featured_title": html.escape(featured["title"]),
+        "featured_lead": html.escape(featured["lead"]),
+        "featured_date": html.escape(featured["date"]),
+        "featured_read": html.escape(featured["read_time"]),
+        "cards": cards,
+        "cta": cta_band("Dein Thema ist noch nicht dabei?", "Schreib Thomas kurz, worum es geht – vielleicht entsteht daraus der nächste Beitrag oder dein persönliches Gespräch."),
+    }
+
+
+def article_body(post):
+    tags = "".join('<span>%s</span>' % html.escape(t) for t in post["tags"])
+    related = "\n".join(
+        '          <li><a href="%s">%s</a></li>' % (url, html.escape(label))
+        for label, url in post["related"]
+    )
+    return """
+<header class="article-hero">
+  <div class="container article-hero-inner">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Startseite</a> / <a href="/blog/">Blog</a> / <span>%(title)s</span></nav>
+    <p class="eyebrow">%(eyebrow)s</p>
+    <h1>%(title)s</h1>
+    <p class="lead">%(lead)s</p>
+    <div class="article-meta-line">
+      <span>Thomas Lude</span><span>%(date)s</span><span>%(read)s Lesezeit</span>
+    </div>
+    <div class="blog-tags">%(tags)s</div>
+  </div>
+</header>
+
+<section class="article-figure">
+  <div class="container">
+    <figure>
+      %(image)s
+      <figcaption>%(alt)s</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section article-section">
+  <div class="container article-content">
+    %(content)s
+  </div>
+</section>
+
+<section class="section section-soft article-afterword">
+  <div class="container article-afterword-grid">
+    <div class="author-box">
+      %(author_image)s
+      <div>
+        <p class="eyebrow">Über den Autor</p>
+        <h2>Thomas Lude</h2>
+        <p>Thomas arbeitet als Kartenleger und hellfühliger Berater in Friedrichshafen am Bodensee. Er verbindet Karten, intuitive Wahrnehmung und klare Gespräche – persönlich, telefonisch und bei Hausbesuchen.</p>
+        <a class="link-more" href="/ueber-thomas-lude/">Mehr über Thomas</a>
+      </div>
+    </div>
+    <div class="related-box">
+      <h2>Passend dazu</h2>
+      <ul>
+%(related)s
+      </ul>
+    </div>
+  </div>
+</section>
+%(cta)s
+""" % {
+        "title": html.escape(post["title"]),
+        "eyebrow": html.escape(post["eyebrow"]),
+        "lead": html.escape(post["lead"]),
+        "date": html.escape(post["date"]),
+        "read": html.escape(post["read_time"]),
+        "tags": tags,
+        "image": img(post["image"], post["alt"], sizes="(max-width: 960px) 100vw, 1040px", loading="eager", fetchpriority="high"),
+        "alt": html.escape(post["alt"]),
+        "content": post["content"],
+        "author_image": img("thomas-lude-portrait-hund-friedrichshafen", "Thomas Lude mit seinem Golden Retriever", sizes="180px", css_class="author-image"),
+        "related": related,
+        "cta": cta_band("Möchtest du dein Thema persönlich besprechen?", "Schreib kurz, worum es geht – Thomas meldet sich persönlich und findet mit dir den passenden Rahmen."),
+    }
+
+# ----------------------------------------------------------------------------
 # FAQ-SEITE
 # ----------------------------------------------------------------------------
 def faq_body():
@@ -1947,6 +2158,16 @@ def main():
     write_page("ratgeber", "Ratgeber rund ums Kartenlegen | Thomas Lude",
                "Ehrlich erklärt: Was passiert bei einer Kartenlegung, welche Fragen kann man stellen, was kostet Kartenlegen – Ratgeber von Thomas Lude.",
                ratgeber_body())
+    write_page("blog", "Blog: Hellfühligkeit, Raumklärung & Sinnfragen | Thomas Lude",
+               "Persönliche Blogbeiträge von Thomas Lude über Hellfühligkeit, energetische Raumklärung, Verlust, Wiedergeburt, karmische Aufgaben und mediale Grenzen.",
+               blog_body(),
+               hero_preload="/assets/img/%s-768w.webp" % BLOG_POSTS[0]["image"],
+               extra_schema=[blog_overview_schema()])
+    for post in BLOG_POSTS:
+        write_page("blog/" + post["slug"], post["meta_title"], post["desc"],
+                   article_body(post),
+                   hero_preload="/assets/img/%s-768w.webp" % post["image"],
+                   extra_schema=[blog_schema(post)])
     write_page("kontakt-termin", "Kontakt & Termin | Thomas Lude – Kartenlegen am Bodensee",
                "Termin bei Thomas Lude anfragen: per WhatsApp, Telefon oder Formular. Persönliche Beratung in Friedrichshafen, telefonisch überall.",
                kontakt_body())
@@ -1974,8 +2195,8 @@ def main():
     slugs = [""] + [p["slug"] for p in LANDING_PAGES] + [
         "events", "kartenlegen-junggesellinnenabschied-bodensee", "tier-mensch",
         "ueber-thomas-lude", "erfahrungen", "faq-kartenlegen", "ratgeber",
-        "kontakt-termin", "impressum", "datenschutz",
-    ]
+        "blog", "kontakt-termin", "impressum", "datenschutz",
+    ] + ["blog/" + p["slug"] for p in BLOG_POSTS]
     urls = "\n".join(
         "  <url><loc>%s/%s</loc></url>" % (SITE_URL, (s + "/") if s else "")
         for s in slugs
@@ -2000,22 +2221,29 @@ Kunden aus München, Augsburg, Ulm, Memmingen sowie Zürich und der Schweiz.
 
 Kernbotschaft: Manchmal braucht es einen anderen Blick.
 Haltung: Keine Heils- oder Zukunftsversprechen, keine Angstmache, Diskretion.
-Kontakt: %s, %s
+Kontakt: {phone}, {email}
 
 ## Wichtige Seiten
-- Startseite: %s/
-- Kartenlegen Friedrichshafen: %s/kartenlegen-friedrichshafen/
-- Kartenlegen München: %s/kartenlegen-muenchen/
-- Kartenlegen Augsburg: %s/kartenlegen-augsburg/
-- Kartenlegen Ulm: %s/kartenlegen-ulm/
-- Kartenlegen Memmingen: %s/kartenlegen-memmingen/
-- Kartenlegen Zürich & Schweiz: %s/kartenlegen-zuerich/
-- Telefonische Beratung: %s/kartenlegen-telefonisch/
-- JGA am Bodensee: %s/kartenlegen-junggesellinnenabschied-bodensee/
-- Tier & Mensch: %s/tier-mensch/
-- Kontakt: %s/kontakt-termin/
-""" % (PHONE, EMAIL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL,
-       SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL))
+- Startseite: {u}/
+- Kartenlegen Friedrichshafen: {u}/kartenlegen-friedrichshafen/
+- Kartenlegen München: {u}/kartenlegen-muenchen/
+- Kartenlegen Augsburg: {u}/kartenlegen-augsburg/
+- Kartenlegen Ulm: {u}/kartenlegen-ulm/
+- Kartenlegen Memmingen: {u}/kartenlegen-memmingen/
+- Kartenlegen Zürich & Schweiz: {u}/kartenlegen-zuerich/
+- Telefonische Beratung: {u}/kartenlegen-telefonisch/
+- JGA am Bodensee: {u}/kartenlegen-junggesellinnenabschied-bodensee/
+- Hausbesuch & Raumklärung: {u}/hausbesuch-raumklaerung/
+- Tier & Mensch: {u}/tier-mensch/
+- Blog: {u}/blog/
+- Kontakt: {u}/kontakt-termin/
+
+## Blog-Beiträge
+{blog_lines}
+""".format(
+            phone=PHONE, email=EMAIL, u=SITE_URL,
+            blog_lines="\n".join("- %s: %s/blog/%s/" % (p["title"], SITE_URL, p["slug"]) for p in BLOG_POSTS),
+        ))
 
     # .nojekyll (GitHub Pages: Jekyll-Verarbeitung abschalten)
     open(os.path.join(OUT, ".nojekyll"), "w").close()
