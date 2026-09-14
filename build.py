@@ -292,6 +292,8 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
       <ul class="footer-list">
         <li><a href="/events/">Kartenlegen für Events</a></li>
         <li><a href="/kartenlegen-junggesellinnenabschied-bodensee/">JGA am Bodensee</a></li>
+        <li><a href="/kartenlegen-hochzeit/">Hochzeit</a></li>
+        <li><a href="/kartenlegen-firmenfeier/">Firmenfeier</a></li>
         <li><a href="/tier-mensch/">Tier &amp; Mensch</a></li>
         <li><a href="/ueber-thomas-lude/">Über Thomas</a></li>
         <li><a href="/ratgeber/">Ratgeber</a></li>
@@ -1111,6 +1113,76 @@ LANDING_PAGES = [
         ],
         "wa": "Hallo Thomas, ich komme aus Zürich und interessiere mich für eine Beratung.",
     },
+    # --- Event: Hochzeit ---
+    {
+        "slug": "kartenlegen-hochzeit",
+        "title": "Kartenmomente für eure Hochzeit | Thomas Lude",
+        "desc": "Ein besonderer Programmpunkt für eure Hochzeit: Thomas Lude bringt einen stilvollen Kartentisch mit, an dem Gäste sich für einen persönlichen Moment Zeit nehmen können.",
+        "eyebrow": "Ein besonderer Programmpunkt",
+        "h1": "Kartenmomente für eure Hochzeit",
+        "lead": "Zwischen Musik, Gesprächen und besonderen Begegnungen entsteht ein ruhiger Platz für persönliche Momente – mit einem eigenen, liebevoll gestalteten Kartentisch.",
+        "image": "thomas-lude-kartenlegen-beratung-am-tisch",
+        "alt": "Thomas Lude an einem stilvoll vorbereiteten Kartentisch bei einer Hochzeitsfeier",
+        "prose": """
+<h2>Ein ruhiger Moment mitten im Fest</h2>
+<p>Thomas begleitet eure Hochzeit mit einem eigenen Kartentisch, an dem sich Gäste – ganz freiwillig und in ihrem eigenen Tempo – für einen kurzen, persönlichen Moment Zeit nehmen können. Kein Programmpunkt mit Ansage, sondern ein ruhiger Gegenpol zum Trubel, der von selbst Gespräche auslöst.</p>
+<h2>Was das für eure Gäste bedeutet</h2>
+<ul class="tick-list">
+  <li>Kurze, persönliche Kartenimpulse – diskret und mit Feingefühl</li>
+  <li>Freiwillig: wer möchte, setzt sich; niemand wird angesprochen</li>
+  <li>Ein Gesprächsthema, das noch lange nachwirkt</li>
+</ul>
+<h2>Optional: ein Moment für das Brautpaar</h2>
+<p>Auf Wunsch nimmt sich Thomas vor oder während der Feier auch einen ruhigen, privaten Moment nur für euch beide – ein symbolischer Blick auf das, was vor euch liegt.</p>
+<h2>So läuft die Planung ab</h2>
+<p>Schreib Thomas kurz, wann und wo eure Feier stattfindet und wie viele Gäste ihr erwartet. Ablauf, Dauer und Kosten bespricht ihr gemeinsam – transparent und ohne Verpflichtung.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Kein lautes Entertainment-Programm, sondern ein stilvoller, achtsamer Akzent, der zu eurem Fest passt statt es zu überlagern.</p>
+""",
+        "faq": [
+            ("Müssen sich alle Gäste beteiligen?",
+             "Nein. Der Kartentisch ist ein freiwilliges Angebot – wer nicht möchte, geht einfach weiter feiern."),
+            ("Wie viel Zeit braucht Thomas vor Ort?",
+             "Das hängt von Gästezahl und Ablauf eurer Feier ab und wird gemeinsam geplant."),
+        ],
+        "wa": "Hallo Thomas, wir planen unsere Hochzeit und interessieren uns für Kartenmomente für unsere Gäste.",
+        "cta_title": "Euer Hochzeitstag, ein besonderer Moment.",
+        "cta_text": "Schreib kurz Datum, Ort und ungefähre Gästezahl – Thomas meldet sich mit einem Vorschlag.",
+    },
+    # --- Event: Firmenfeier ---
+    {
+        "slug": "kartenlegen-firmenfeier",
+        "title": "Kartenmomente für Firmenfeiern & Teamevents | Thomas Lude",
+        "desc": "Ein außergewöhnlicher Gesprächsanlass für Betriebsfeiern, Weihnachtsfeiern und Teamevents: persönliche Kartenimpulse mit Thomas Lude.",
+        "eyebrow": "Ein besonderer Akzent für euer Event",
+        "h1": "Kartenmomente für Firmenfeiern &amp; Teamevents",
+        "lead": "Ein ruhiger, stilvoller Gegenpol zum Eventtrubel: Thomas bringt einen eigenen Kartentisch mit, an dem Gäste sich auf Wunsch einen kurzen, persönlichen Impuls holen können.",
+        "image": "thomas-lude-ueber-thomas-kartenlegen",
+        "alt": "Thomas Lude an seinem Kartentisch – ein besonderer Programmpunkt für Firmenfeiern und Teamevents",
+        "prose": """
+<h2>Ein außergewöhnlicher Programmpunkt</h2>
+<p>Bei Weihnachtsfeiern, Teamtagen oder Kundenveranstaltungen sorgt der Kartentisch von Thomas für echte Gespräche abseits vom Alltag. Kein lautes Entertainment, sondern ein ruhiger, persönlicher Moment, der im Gedächtnis bleibt.</p>
+<h2>Was Gäste erwarten können</h2>
+<ul class="tick-list">
+  <li>Kurze, persönliche Impulse – diskret und wertschätzend</li>
+  <li>Ein Gesprächsanlass, der Menschen zusammenbringt</li>
+  <li>Freiwillige Teilnahme, kein Druck</li>
+</ul>
+<h2>So läuft die Planung ab</h2>
+<p>Schreib Thomas kurz die Rahmendaten eurer Veranstaltung – Ort, Datum, ungefähre Gästezahl. Ablauf, Dauer und Kosten klärt ihr gemeinsam, transparent und unverbindlich.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Bodenständig statt abgehoben, diskret statt aufdringlich – ein Programmpunkt, der zu einem professionellen Rahmen passt.</p>
+""",
+        "faq": [
+            ("Passt das auch zu einem eher förmlichen Firmenevent?",
+             "Ja. Thomas passt Auftreten und Tempo an den Rahmen der Veranstaltung an – zurückhaltend und professionell."),
+            ("Wie viele Gäste kann Thomas an einem Abend erreichen?",
+             "Das hängt von der Eventdauer ab und wird bei der Anfrage gemeinsam eingeschätzt."),
+        ],
+        "wa": "Hallo Thomas, wir planen eine Firmenfeier und interessieren uns für Kartenmomente für unsere Gäste.",
+        "cta_title": "Euer Firmenevent, ein besonderer Akzent.",
+        "cta_text": "Schreib kurz Rahmendaten eurer Veranstaltung – Thomas meldet sich mit einem Vorschlag.",
+    },
 ]
 
 
@@ -1167,6 +1239,20 @@ def events_body():
           <h3>Private Feier</h3>
           <p>Freundinnen-Wochenende am See, Familienfeier oder einfach ein guter Grund – Thomas bringt die Karten mit.</p>
           <a class="link-more" href="/kontakt-termin/">Feier anfragen</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3><a href="/kartenlegen-hochzeit/">Hochzeit</a></h3>
+          <p>Ein stilvoller Kartentisch als besonderer Programmpunkt eurer Hochzeit – ruhig, persönlich, ganz freiwillig für eure Gäste.</p>
+          <a class="link-more" href="/kartenlegen-hochzeit/">Mehr zur Hochzeit</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3><a href="/kartenlegen-firmenfeier/">Firmenfeier &amp; Teamevent</a></h3>
+          <p>Ein außergewöhnlicher Gesprächsanlass für Weihnachtsfeier, Teamtag oder Kundenevent – diskret und professionell im Auftritt.</p>
+          <a class="link-more" href="/kartenlegen-firmenfeier/">Mehr zur Firmenfeier</a>
         </div>
       </article>
     </div>
