@@ -111,6 +111,8 @@ FAQ_MAIN = [
      "Nein – und das sagt er dir auch ehrlich. Die Karten können Zusammenhänge, Tendenzen und mögliche Entwicklungen sichtbar machen. Was du daraus machst, bleibt immer deine Entscheidung."),
     ("Und wenn ich unsicher bin, ob das das Richtige für mich ist?",
      "Dann schreib einfach kurz. Ein unverbindliches Vorgespräch kostet nichts – und du merkst schnell, ob es sich richtig anfühlt."),
+    ("Bietet Thomas auch Hausbesuche an?",
+     "Ja, im Bodenseeraum. Dabei bezieht Thomas auch die Atmosphäre deines Zuhauses in die Beratung ein – auf Wunsch auch als energetische Raumklärung."),
 ]
 
 def cta_band(title, text, whatsapp_msg="Hallo Thomas, ich interessiere mich für eine Beratung."):
@@ -284,6 +286,7 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
         <li><a href="/kartenlegen-ulm/">Kartenlegen Ulm</a></li>
         <li><a href="/kartenlegen-memmingen/">Kartenlegen Memmingen</a></li>
         <li><a href="/kartenlegen-zuerich/">Kartenlegen Zürich</a></li>
+        <li><a href="/hausbesuch-raumklaerung/">Hausbesuch &amp; Raumklärung</a></li>
         <li><a href="/faq-kartenlegen/">Häufige Fragen</a></li>
       </ul>
     </nav>
@@ -470,11 +473,21 @@ def home_body():
       <p><strong>Und ich sage dir nicht einfach das, was du hören möchtest.</strong></p>
       <p>Seit vielen Jahren begleite ich Menschen, wenn das Leben Fragen stellt. Die Karten können Zusammenhänge, Tendenzen und Möglichkeiten aufzeigen – ehrlich, klar und einfühlsam. Was du daraus machst, bleibt deine Entscheidung.</p>
       <p>Kartenlegen ist für mich eine Berufung, die schon in meiner Familie verwurzelt ist – ich lege die Karten in dritter Generation. Heute verbinde ich diese Tradition mit meiner Erfahrung, meiner Intuition und einer bodenständigen, lebensnahen Art.</p>
-      <p class="tag-note">Kartenleger · Friedrichshafen am Bodensee</p>
+      <p class="tag-note">Kartenlegen · Hellfühlige Beratung · Friedrichshafen am Bodensee</p>
       <div class="cta-row">
         <a class="btn btn-gold" href="/ueber-thomas-lude/">Mehr über Thomas →</a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- MEHR ALS KARTENLEGEN -->
+<section class="section section-soft" id="hellfuehlig">
+  <div class="container prose" style="max-width:760px;">
+    <p class="eyebrow">Mehr als Kartenlegen</p>
+    <h2>Die Karten sind eines meiner Werkzeuge – nicht das einzige.</h2>
+    <p>Thomas beschreibt sich selbst als ausgesprochen hellfühlig. In einer Beratung verbindet er seine intuitive Wahrnehmung mit der Kartenlegung – manches nimmt er schon wahr, bevor überhaupt eine Karte auf dem Tisch liegt. Besonders intensiv erlebt er diese Wahrnehmung bei <a href="/hausbesuch-raumklaerung/">Hausbesuchen</a>, weil er dort auch die Umgebung und Atmosphäre eines Zuhauses kennenlernt.</p>
+    <p>Was sich dabei zeigt, versteht Thomas nicht als feste Zukunftsvorhersage, sondern als Einladung, genauer hinzuschauen. Die Karten geben Orientierung und machen Zusammenhänge sichtbar – sie ersetzen keine Entscheidung, sie können aber einen Impuls geben, der sich stimmig anfühlt.</p>
   </div>
 </section>
 
@@ -853,10 +866,14 @@ LANDING_PAGES = [
   <li>Konflikte und Dynamiken am Arbeitsplatz besser verstehen</li>
   <li>Den richtigen Zeitpunkt und die eigene Rolle erkennen</li>
 </ul>
+<h2>Geschäftliche Entscheidungen</h2>
+<p>Manche Entscheidungen lassen sich nicht allein mit Zahlen oder Listen lösen. Für Selbstständige und Unternehmer, die vor wichtigen Weichenstellungen stehen, kann eine Beratung helfen, die eigene Intuition bewusster mit einzubeziehen – neben Kopf auch Bauch.</p>
+<h2>Haus, Umzug &amp; größere Vorhaben</h2>
+<p>Ein Zuhause, ein Umzug oder ein größeres Vorhaben löst oft viele Fragen aus, die über reine Zahlen hinausgehen. Thomas eröffnet dazu einen intuitiven Blick auf die persönlichen Fragen dahinter – nicht auf Marktwert, Finanzierung oder rechtliche Details.</p>
 <h2>So läuft eine Beratung ab</h2>
 <p>Du erzählst, wo du stehst und was dich beschäftigt. Thomas legt die Karten und bespricht mit dir, welche Tendenzen und Möglichkeiten sich zeigen – persönlich in Friedrichshafen oder am Telefon.</p>
 <h2>Warum Thomas Lude</h2>
-<p>Thomas ist Kartenleger, kein Finanz- oder Karriereberater. Er gibt keine Erfolgsgarantien und ersetzt keine fachliche Beratung zu Verträgen, Steuern oder Geldanlagen. Was er kann: dir helfen, deine Situation klarer zu sehen – damit du deine Entscheidung mit mehr Ruhe triffst.</p>
+<p>Thomas ist Kartenleger, kein Finanz-, Karriere-, Rechts- oder Immobilienberater. Er gibt keine Erfolgsgarantien und keine Empfehlung zum Kauf, Verkauf oder Halten von Geldanlagen, Wertpapieren oder Immobilien. Was er kann: dir helfen, deine Situation klarer zu sehen – damit du deine Entscheidung eigenverantwortlich und mit mehr Ruhe triffst, gegebenenfalls nach Rücksprache mit entsprechend qualifizierten Fachleuten.</p>
 """,
     },
     # --- Thema: Familie ---
@@ -1198,6 +1215,45 @@ LANDING_PAGES = [
         "wa": "Hallo Thomas, wir planen eine Firmenfeier und interessieren uns für Kartenmomente für unsere Gäste.",
         "cta_title": "Euer Firmenevent, ein besonderer Akzent.",
         "cta_text": "Schreib kurz Rahmendaten eurer Veranstaltung – Thomas meldet sich mit einem Vorschlag.",
+    },
+    # --- Premium: Hausbesuch & Raumklärung ---
+    {
+        "slug": "hausbesuch-raumklaerung",
+        "title": "Hausbesuch & Raumklärung am Bodensee | Thomas Lude",
+        "desc": "Thomas kommt zu dir nach Hause: Kartenlegung mit Blick auf die Atmosphäre deines Zuhauses, oder energetische Raumklärung. Persönlich im Bodenseeraum.",
+        "eyebrow": "Ein besonderes Format",
+        "h1": "Hausbesuch &amp; Raumklärung",
+        "lead": "Manche Dinge spürt man erst, wenn man den Raum betritt. Thomas kommt zu dir nach Hause – für eine Kartenlegung mit Blick auf die Atmosphäre deines Zuhauses, oder für eine energetische Raumklärung.",
+        "image": "thomas-lude-ueber-thomas-kartenlegen",
+        "alt": "Thomas Lude bei einem persönlichen Hausbesuch am Bodensee",
+        "prose": """
+<h2>Thomas bei dir zu Hause</h2>
+<p>Neben Beratungen in Friedrichshafen und am Telefon bietet Thomas persönliche Hausbesuche im Bodenseeraum an. Dabei findet die Kartenlegung dort statt, wo viele der Fragen tatsächlich entstehen: in deinem eigenen Zuhause. Neben den Karten bezieht Thomas dabei auch seine Wahrnehmung der Atmosphäre vor Ort in die Beratung ein.</p>
+<p>Gerade bei Fragen zu Partnerschaft, Familie, Veränderungen oder wiederkehrenden Belastungen kann daraus eine andere Form der Beratung entstehen. Bei Hausbesuchen entstehen bei Thomas häufig intuitive Eindrücke zu Themen und Spannungen, die mit den Bewohnern und ihrer aktuellen Lebenssituation verbunden sein können.</p>
+<h2>Energetische Raumklärung</h2>
+<p>Manche Menschen erleben bestimmte Räume als unruhig, schwer oder belastend, ohne genau benennen zu können, warum. Thomas nimmt sich Zeit für das Haus, seine Räume und die Menschen, die darin leben – ruhig, respektvoll und ohne Dramatisierung. Es geht nicht darum, etwas Schlimmes zu behaupten, sondern darum, wieder mehr Ruhe und ein stimmiges Gefühl im eigenen Zuhause zu finden.</p>
+<h2>Preis</h2>
+<ul class="tick-list">
+  <li><strong>Ab 249 €</strong> – Hausbesuch, ca. 90 Minuten</li>
+  <li><strong>Ab 349 €</strong> – Hausbesuch kombiniert mit energetischer Raumklärung</li>
+  <li>Anfahrt im Bodensee-Radius inklusive, darüber hinaus nach Entfernung</li>
+</ul>
+<p>Genauer Umfang und Dauer hängen von Anliegen und Hausgröße ab und werden vorab am Telefon besprochen.</p>
+<h2>So läuft es ab</h2>
+<p>Schreib Thomas kurz, worum es geht und wo du wohnst. Ablauf, Dauer und genauer Preis werden vorab telefonisch besprochen.</p>
+<div class="notice-box" style="margin-top:1.6rem;">
+  <p><strong>Wichtiger Hinweis:</strong> Diese Begleitung ist eine persönliche, intuitive Beratung. Sie ersetzt keine rechtliche, steuerliche, finanzielle oder Immobilienberatung, keine bautechnische Prüfung der Bausubstanz und keine ärztliche oder psychotherapeutische Behandlung.</p>
+</div>
+""",
+        "faq": [
+            ("Muss das ganze Haus begehbar sein?",
+             "Nein. Das besprecht ihr vorab – meist reicht es, die für dich wichtigen Räume zu zeigen."),
+            ("Können mehrere Bewohner dabei sein?",
+             "Ja, das ist möglich und wird individuell abgestimmt."),
+        ],
+        "wa": "Hallo Thomas, ich interessiere mich für einen Hausbesuch / eine Raumklärung.",
+        "cta_title": "Dein Zuhause, ein persönlicher Blick.",
+        "cta_text": "Schreib kurz, worum es geht und wo du wohnst – Thomas meldet sich mit einem Vorschlag.",
     },
 ]
 
