@@ -324,7 +324,7 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>&copy; Thomas Lude · %(city)s am Bodensee</p>
+    <p>&copy; Thomas Lude · %(city)s am Bodensee · Website von <a href="https://vortexkey.de" target="_blank" rel="noopener">VortexKey</a></p>
     <nav class="footer-legal" aria-label="Rechtliches">
       <a href="/impressum/">Impressum</a>
       <a href="/datenschutz/">Datenschutz</a>
