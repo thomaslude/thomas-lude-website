@@ -544,32 +544,33 @@ def home_body():
   </div>
 </section>
 
-<!-- BEWERTUNGEN (DUMMY – vor Go-Live durch echte, freigegebene Stimmen ersetzen!) -->
+<!-- VERTRAUEN (Fakten statt erfundener Zitate, bis echte Bewertungen vorliegen) -->
 <section class="section" id="erfahrungen">
   <div class="container">
     <div class="section-head left" style="text-align:left;">
-      <h2>Was Menschen nach einer Beratung sagen</h2>
+      <h2>Warum Menschen Thomas vertrauen</h2>
     </div>
     <div class="card-grid three">
-      <article class="testimonial">
-        <div class="stars">%(stars)s</div>
-        <span class="dummy-badge">Platzhalter – bitte ersetzen</span>
-        <blockquote>„Thomas hat Dinge angesprochen, die ich so nicht erwartet hätte. Es war ehrlich, klar und sehr hilfreich.“</blockquote>
-        <p class="who">S. K.</p>
+      <article class="card">
+        <div class="card-body">
+          <h3>Kartenlegen in dritter Generation</h3>
+          <p>Eine Tradition, die in der Familie gewachsen ist – verbunden mit eigener Erfahrung und einer bodenständigen, ehrlichen Art.</p>
+        </div>
       </article>
-      <article class="testimonial">
-        <div class="stars">%(stars)s</div>
-        <span class="dummy-badge">Platzhalter – bitte ersetzen</span>
-        <blockquote>„Ich war zuerst skeptisch und bin begeistert. Eine tolle Atmosphäre und sehr treffende Aussagen.“</blockquote>
-        <p class="who">M. L.</p>
+      <article class="card">
+        <div class="card-body">
+          <h3>Kunden aus Deutschland, Österreich und der Schweiz</h3>
+          <p>Persönlich am Bodensee, telefonisch weit darüber hinaus – über die Region hinaus bekannt, vor allem durch Weiterempfehlung.</p>
+        </div>
       </article>
-      <article class="testimonial">
-        <div class="stars">%(stars)s</div>
-        <span class="dummy-badge">Platzhalter – bitte ersetzen</span>
-        <blockquote>„Man fühlt sich sofort wohl und ernst genommen. Ich komme auf jeden Fall wieder.“</blockquote>
-        <p class="who">A. R.</p>
+      <article class="card">
+        <div class="card-body">
+          <h3>Diskretion als Grundprinzip</h3>
+          <p>Was am Kartentisch oder am Telefon besprochen wird, bleibt vertraulich – ohne Ausnahme.</p>
+        </div>
       </article>
     </div>
+    <p class="tag-note" style="margin-top:1.6rem;">Bewertungen folgen in Kürze – sobald erste Kundinnen und Kunden öffentlich Rückmeldung geben.</p>
   </div>
 </section>
 
@@ -1575,65 +1576,46 @@ def ueber_body():
 # ERFAHRUNGEN (alle Stimmen = PLATZHALTER!)
 # ----------------------------------------------------------------------------
 def erfahrungen_body():
-    stars = icon("star", 16) * 5
-
-    def t(quote, who):
-        return """
-      <article class="testimonial">
-        <div class="stars">%s</div>
-        <span class="dummy-badge">Platzhalter – bitte ersetzen</span>
-        <blockquote>„%s“</blockquote>
-        <p class="who">%s</p>
-      </article>""" % (stars, quote, who)
-
     return """
 <header class="page-hero">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Startseite</a> / <span>Erfahrungen</span></nav>
     <p class="eyebrow">Erfahrungen</p>
-    <h1>Was Menschen über Beratungen mit Thomas sagen</h1>
-    <p class="lead">Stimmen von Menschen, die bei Thomas waren – persönlich, am Telefon, auf Events und mit ihren Tieren.</p>
+    <h1>Warum Menschen Thomas vertrauen</h1>
+    <p class="lead">Diese Seite sammelt mit der Zeit echte Rückmeldungen von Menschen, die bei Thomas waren – persönlich, am Telefon, auf Events und mit ihren Tieren.</p>
   </div>
 </header>
 
-<!-- WICHTIG: Alle Stimmen auf dieser Seite sind Platzhalter und dürfen so NICHT veröffentlicht werden.
-     Erst echte, schriftlich freigegebene Kundenstimmen eintragen! -->
 <section class="section">
   <div class="container">
-    <h2>Persönliche Beratung</h2>
-    <div class="card-grid two">
-      %(t1)s
-      %(t2)s
+    <div class="notice-box" style="margin-bottom:2.2rem;">
+      <p><strong>Bewertungen folgen in Kürze.</strong> Statt erfundener Zitate zeigen wir hier erst echte, freigegebene Rückmeldungen, sobald sie vorliegen. Bis dahin ein paar Fakten, die für sich sprechen:</p>
     </div>
-    <h2 style="margin-top:3rem;">Liebe &amp; Beziehung</h2>
-    <div class="card-grid two">
-      %(t3)s
-      %(t4)s
-    </div>
-    <h2 style="margin-top:3rem;">Events</h2>
-    <div class="card-grid two">
-      %(t5)s
-      %(t6)s
-    </div>
-    <h2 style="margin-top:3rem;">Tierbegleitung</h2>
-    <div class="card-grid two">
-      %(t7)s
-    </div>
-    <div class="notice-box" style="margin-top:3rem;">
-      <p><strong>Hinweis:</strong> Alle Stimmen auf dieser Seite sind Platzhalter und werden vor dem Go-Live durch echte, freigegebene Kundenstimmen ersetzt.</p>
+    <div class="card-grid three">
+      <article class="card">
+        <div class="card-body">
+          <h3>Kartenlegen in dritter Generation</h3>
+          <p>Eine Tradition, die in der Familie gewachsen ist – verbunden mit eigener Erfahrung und einer bodenständigen, ehrlichen Art.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3>Kunden aus Deutschland, Österreich und der Schweiz</h3>
+          <p>Persönlich am Bodensee, telefonisch weit darüber hinaus – über die Region hinaus bekannt, vor allem durch Weiterempfehlung.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3>Diskretion als Grundprinzip</h3>
+          <p>Was am Kartentisch oder am Telefon besprochen wird, bleibt vertraulich – ohne Ausnahme.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 %(cta)s
 """ % {
-        "t1": t("Ich war skeptisch, aber Thomas war so normal und direkt, dass ich mich sofort wohlgefühlt habe. Ich bin mit einem klaren Kopf gegangen.", "S. K., Friedrichshafen"),
-        "t2": t("Er hat Dinge angesprochen, die ich ihm nicht erzählt hatte – und trotzdem hat er mir nichts eingeredet. Genau richtig.", "M. L., Bodensee"),
-        "t3": t("Nach der Trennung war ich völlig durcheinander. Die Beratung hat mir geholfen, wieder klar zu sehen – ohne falsche Hoffnungen.", "A. R., telefonische Beratung"),
-        "t4": t("Endlich hat mir jemand nicht das erzählt, was ich hören wollte, sondern das, was ich gebraucht habe.", "S. M."),
-        "t5": t("Das Highlight unseres JGA! Jede hatte ihren Moment, wir haben gelacht und ein bisschen geweint. Absolut zu empfehlen.", "JGA-Gruppe, Bodensee"),
-        "t6": t("Thomas kam zu unserem Mädelswochenende in die Ferienwohnung – unkompliziert, herzlich und ein Abend, den wir nicht vergessen.", "Freundinnen-Wochenende"),
-        "t7": t("Unser Hund war nach dem Umzug total unruhig. Die Begleitung mit Thomas hat ihm – und uns – spürbar gutgetan.", "Familie W. mit Balu"),
-        "cta": cta_band("Du warst bei Thomas?", "Deine ehrliche Rückmeldung hilft anderen, die noch unsicher sind."),
+        "cta": cta_band("Du warst bei Thomas?", "Melde dich gern – mit deinem Einverständnis nehmen wir deine Rückmeldung hier mit auf."),
     }
 
 # ----------------------------------------------------------------------------
