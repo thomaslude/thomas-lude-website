@@ -278,8 +278,12 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
       <ul class="footer-list">
         <li><a href="/kartenlegen-friedrichshafen/">Kartenlegen Friedrichshafen</a></li>
         <li><a href="/kartenlegen-bodensee/">Kartenlegen Bodensee</a></li>
-        <li><a href="/kartenlegen-liebe-partnerschaft/">Liebe &amp; Partnerschaft</a></li>
         <li><a href="/kartenlegen-telefonisch/">Telefonische Beratung</a></li>
+        <li><a href="/kartenlegen-muenchen/">Kartenlegen München</a></li>
+        <li><a href="/kartenlegen-augsburg/">Kartenlegen Augsburg</a></li>
+        <li><a href="/kartenlegen-ulm/">Kartenlegen Ulm</a></li>
+        <li><a href="/kartenlegen-memmingen/">Kartenlegen Memmingen</a></li>
+        <li><a href="/kartenlegen-zuerich/">Kartenlegen Zürich</a></li>
         <li><a href="/faq-kartenlegen/">Häufige Fragen</a></li>
       </ul>
     </nav>
@@ -574,9 +578,8 @@ def home_body():
     <div>
       <p class="eyebrow">Zuhause am Bodensee</p>
       <h2>Persönlich in Friedrichshafen. Verbunden weit darüber hinaus.</h2>
-      <p>Termine in Friedrichshafen und nach Vereinbarung in der Region Bodensee. Für Kartenabende kommt Thomas zu euch – und wer weiter weg wohnt, erreicht ihn genauso persönlich am Telefon.</p>
-      <!-- HINWEIS: Ortsliste erst veröffentlichen, wenn Thomas bestätigt hat, welche Orte er tatsächlich bedient. -->
-      <p class="tag-note">Friedrichshafen · Meersburg · Überlingen · Konstanz · Lindau · Ravensburg · Vorarlberg · Ostschweiz</p>
+      <p>Termine in Friedrichshafen und nach Vereinbarung in der Region Bodensee. Telefonisch erreichst du Thomas von überall – auch aus München, Augsburg, Ulm, Memmingen oder der Schweiz. Für Kartenabende kommt Thomas zu Gruppen.</p>
+      <p class="tag-note">Friedrichshafen · Meersburg · Überlingen · Konstanz · Lindau · Ravensburg · <a href="/kartenlegen-muenchen/">München</a> · <a href="/kartenlegen-augsburg/">Augsburg</a> · <a href="/kartenlegen-ulm/">Ulm</a> · <a href="/kartenlegen-memmingen/">Memmingen</a> · <a href="/kartenlegen-zuerich/">Zürich</a></p>
       <div class="cta-row">
         <a class="btn btn-outline-dark" href="/kartenlegen-friedrichshafen/">Kartenlegen in Friedrichshafen</a>
       </div>
@@ -946,6 +949,167 @@ LANDING_PAGES = [
         "wa": "Hallo Thomas, ich interessiere mich für eine telefonische Beratung.",
         "cta_title": "Ein Anruf genügt.",
         "cta_text": "Vereinbare deinen Telefontermin mit Thomas.",
+    },
+    # --- Region: München ---
+    {
+        "slug": "kartenlegen-muenchen",
+        "title": "Kartenlegen für München | Telefonische Beratung mit Thomas Lude",
+        "desc": "Kartenlegen für Menschen aus München: telefonische Beratung mit Thomas Lude vom Bodensee, oder persönlich nach Vereinbarung in Friedrichshafen.",
+        "eyebrow": "Auch aus München erreichbar",
+        "h1": "Kartenlegen für Menschen aus München",
+        "lead": "Du wohnst in München und suchst eine ehrliche Kartenberatung? Thomas berät dich telefonisch – oder persönlich, wenn du den Weg an den Bodensee auf dich nimmst.",
+        "image": "thomas-lude-kartenlegen-beratung-am-tisch",
+        "alt": "Thomas Lude bei einer Kartenberatung am Tisch – auch für Kundinnen und Kunden aus München per Telefon erreichbar",
+        "prose": """
+<h2>Kartenlegen, wenn München nicht gleich um die Ecke ist</h2>
+<p>München und Friedrichshafen trennen rund zwei Stunden Fahrzeit. Für ein einzelnes Gespräch ist das oft schlicht unpraktisch – deshalb nutzen die meisten Kundinnen und Kunden aus München die telefonische Beratung. Am Telefon zählt das Gespräch, nicht der Ort.</p>
+<h2>Persönlich oder telefonisch – deine Entscheidung</h2>
+<p>Manche nehmen die Fahrt trotzdem auf sich, wenn sie Thomas lieber persönlich am Tisch gegenübersitzen möchten. Beides ist möglich, beides ist gleichwertig – was am besten passt, hängt von dir und deinem Thema ab.</p>
+<ul class="tick-list">
+  <li>Telefonische Beratung – ohne Anfahrt, genauso persönlich</li>
+  <li>Persönlicher Termin in Friedrichshafen – nach Vereinbarung</li>
+  <li>Themen: Liebe, Entscheidungen, Beruf, Familie, Orientierung</li>
+</ul>
+<h2>So läuft es ab</h2>
+<p>Du meldest dich per WhatsApp, Anruf oder Formular, ihr vereinbart einen Termin, und Thomas nimmt sich Zeit für dein Thema – am Telefon oder am Kartentisch.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Thomas legt die Karten in dritter Generation, bodenständig und ohne große Versprechen. Was du bekommst, ist ein ehrlicher, aufmerksamer Blick auf deine Situation – kein Orakel, keine Garantie.</p>
+""",
+        "faq": [
+            ("Muss ich für eine Beratung extra nach Friedrichshafen kommen?",
+             "Nein. Die meisten Beratungen mit Kundinnen und Kunden aus München finden telefonisch statt. Ein persönlicher Termin ist möglich, aber keine Voraussetzung."),
+            ("Ist eine telefonische Beratung genauso gut wie persönlich?",
+             "Ja. Entscheidend ist das Gespräch und deine Bereitschaft, hinzuschauen – nicht der Ort, an dem ihr sprecht."),
+        ],
+        "wa": "Hallo Thomas, ich rufe aus München und interessiere mich für eine Beratung.",
+    },
+    # --- Region: Augsburg ---
+    {
+        "slug": "kartenlegen-augsburg",
+        "title": "Kartenlegen für Augsburg | Telefonische Beratung mit Thomas Lude",
+        "desc": "Kartenlegen für Menschen aus Augsburg: telefonisch mit Thomas Lude vom Bodensee, oder persönlich nach Vereinbarung in Friedrichshafen.",
+        "eyebrow": "Auch aus Augsburg erreichbar",
+        "h1": "Kartenlegen für Menschen aus Augsburg",
+        "lead": "Von Augsburg zum Bodensee ist es ein Stück Weg – deshalb bietet Thomas dir die telefonische Beratung als unkomplizierte Alternative zur persönlichen Anreise.",
+        "image": "thomas-lude-ueber-thomas-kartenlegen",
+        "alt": "Thomas Lude an seinem Kartentisch – Kartenlegen auch telefonisch erreichbar für Kundinnen und Kunden aus Augsburg",
+        "prose": """
+<h2>Kartenlegen aus der Ferne – ohne etwas zu verlieren</h2>
+<p>Eine Autofahrt von Augsburg an den Bodensee dauert schnell zwei Stunden. Das muss kein Hindernis sein: Am Telefon entsteht das gleiche offene Gespräch wie am Kartentisch – nur ohne die Fahrtzeit.</p>
+<h2>Was für Kundinnen und Kunden aus Augsburg gilt</h2>
+<ul class="tick-list">
+  <li>Telefonische Beratung – flexibel, diskret, ohne Anfahrt</li>
+  <li>Persönlicher Termin in Friedrichshafen – wenn du den Weg lieber machst</li>
+  <li>Gleiche Themen, gleiche Aufmerksamkeit, gleicher Preis</li>
+</ul>
+<h2>So läuft es ab</h2>
+<p>Kurze Anfrage per WhatsApp oder Telefon, ein Termin, der passt, und ein Gespräch, in dem Thomas sich ganz auf dein Thema einlässt.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Kein Kristallkugel-Theater, keine leeren Versprechen. Nur ein erfahrener, ehrlicher Blick – ob am Tisch in Friedrichshafen oder am Telefon nach Augsburg.</p>
+""",
+        "faq": [
+            ("Lohnt sich eine telefonische Beratung wirklich?",
+             "Ja – für die meisten Themen ist der Ort zweitrangig. Wichtig ist, dass du in Ruhe sprechen kannst."),
+            ("Kann ich auch kurzfristig einen Termin bekommen?",
+             "Frag einfach per WhatsApp an, wann es bei dir passt – Thomas meldet sich mit einem Terminvorschlag."),
+        ],
+        "wa": "Hallo Thomas, ich rufe aus Augsburg und interessiere mich für eine Beratung.",
+    },
+    # --- Region: Ulm ---
+    {
+        "slug": "kartenlegen-ulm",
+        "title": "Kartenlegen für Ulm | Persönlich oder telefonisch mit Thomas Lude",
+        "desc": "Kartenlegen für Menschen aus Ulm: persönlich in Friedrichshafen oder telefonisch mit Thomas Lude vom Bodensee.",
+        "eyebrow": "Auch aus Ulm erreichbar",
+        "h1": "Kartenlegen für Menschen aus Ulm",
+        "lead": "Ulm liegt näher am Bodensee, als man denkt – eine persönliche Beratung in Friedrichshafen ist gut machbar. Wer es lieber unkompliziert mag, wählt die telefonische Beratung.",
+        "image": "thomas-lude-kartenlegen-beratung-am-tisch",
+        "alt": "Thomas Lude im Gespräch bei einer Kartenberatung – gut erreichbar auch für Kundinnen und Kunden aus Ulm",
+        "prose": """
+<h2>Von Ulm an den Bodensee – näher als gedacht</h2>
+<p>Die Strecke von Ulm nach Friedrichshafen ist gut zu fahren – für viele aus der Region ein machbarer Weg für eine persönliche Beratung am Kartentisch. Wer es dennoch unkompliziert halten möchte, ist am Telefon genauso gut aufgehoben.</p>
+<h2>Zwei Wege, ein Gespräch</h2>
+<ul class="tick-list">
+  <li>Persönlich in Friedrichshafen – direkt am Kartentisch</li>
+  <li>Telefonisch – wenn dir das lieber oder einfacher ist</li>
+  <li>Themen: Liebe, Beruf, Familie, Entscheidungen, Orientierung</li>
+</ul>
+<h2>So läuft es ab</h2>
+<p>Du meldest dich, ihr vereinbart einen Termin – persönlich oder am Telefon –, und Thomas nimmt sich Zeit für das, was dich beschäftigt.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Bodenständig, direkt und ohne große Versprechen. Thomas legt die Karten in dritter Generation und sagt dir ehrlich, was er sieht – nicht das, was du hören willst.</p>
+""",
+        "faq": [
+            ("Wie weit ist es von Ulm nach Friedrichshafen?",
+             "Rund eine Stunde mit dem Auto – für viele gut machbar, wenn du lieber persönlich kommen möchtest."),
+            ("Kann ich mich vorher unverbindlich per WhatsApp melden?",
+             "Ja, das ist sogar der schnellste Weg, um einen passenden Termin zu finden."),
+        ],
+        "wa": "Hallo Thomas, ich komme aus Ulm und interessiere mich für eine Beratung.",
+    },
+    # --- Region: Memmingen ---
+    {
+        "slug": "kartenlegen-memmingen",
+        "title": "Kartenlegen für Memmingen | Thomas Lude vom Bodensee",
+        "desc": "Kartenlegen für Menschen aus Memmingen und dem Allgäu: persönlich in Friedrichshafen oder telefonisch mit Thomas Lude.",
+        "eyebrow": "Auch aus Memmingen erreichbar",
+        "h1": "Kartenlegen für Menschen aus Memmingen",
+        "lead": "Von Memmingen aus ist der Bodensee gut erreichbar. Ob persönlich in Friedrichshafen oder telefonisch – Thomas nimmt sich Zeit für dein Thema.",
+        "image": "thomas-lude-ueber-thomas-kartenlegen",
+        "alt": "Thomas Lude bei einer ruhigen Kartenberatung – auch für Kundinnen und Kunden aus Memmingen und dem Allgäu",
+        "prose": """
+<h2>Kartenlegen für Memmingen und das Allgäu</h2>
+<p>Memmingen und das Allgäu liegen nah genug am Bodensee, dass eine persönliche Beratung in Friedrichshafen für viele gut machbar ist. Genauso gut funktioniert das Gespräch am Telefon, wenn dir das lieber ist.</p>
+<h2>So erreichst du Thomas aus Memmingen</h2>
+<ul class="tick-list">
+  <li>Persönlich in Friedrichshafen – gut zu erreichen</li>
+  <li>Telefonisch – ohne Anfahrt, genauso persönlich</li>
+  <li>Auch als Kartenabend für Gruppen aus dem Allgäu, nach Absprache</li>
+</ul>
+<h2>So läuft es ab</h2>
+<p>Kurze Anfrage, ein passender Termin, ein ehrliches Gespräch – am Tisch oder am Telefon.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Ruhig, direkt und ohne Show. Thomas hört zu, legt die Karten und sagt dir, was er sieht – ehrlich, auch wenn es nicht das ist, was du erwartet hast.</p>
+""",
+        "faq": [
+            ("Bietet Thomas auch Kartenabende im Allgäu an?",
+             "Ja, für Gruppen ist das nach Absprache möglich – schreib einfach kurz, was ihr vorhabt."),
+            ("Was, wenn mir eine Anreise zu aufwendig ist?",
+             "Dann ist die telefonische Beratung die einfachste Lösung – genauso persönlich, ohne Fahrtzeit."),
+        ],
+        "wa": "Hallo Thomas, ich komme aus Memmingen und interessiere mich für eine Beratung.",
+    },
+    # --- Region: Zürich / Schweiz ---
+    {
+        "slug": "kartenlegen-zuerich",
+        "title": "Kartenlegen für Zürich & die Schweiz | Thomas Lude",
+        "desc": "Kartenlegen für Kundinnen und Kunden aus Zürich und der Schweiz: telefonisch mit Thomas Lude vom Bodensee, oder persönlich in Friedrichshafen.",
+        "eyebrow": "Auch aus der Schweiz erreichbar",
+        "h1": "Kartenlegen für Zürich und die Schweiz",
+        "lead": "Der Bodensee liegt direkt an der Grenze zur Schweiz – einige Kundinnen und Kunden aus Zürich und der Ostschweiz nehmen den Weg nach Friedrichshafen bewusst auf sich. Genauso gut erreichst du Thomas telefonisch.",
+        "image": "thomas-lude-kartenleger-friedrichshafen-bodensee",
+        "alt": "Thomas Lude bei einer persönlichen Kartenberatung – auch Kundinnen und Kunden aus Zürich und der Schweiz kommen dafür an den Bodensee",
+        "prose": """
+<h2>Nur eine Grenze dazwischen</h2>
+<p>Von Zürich an den Bodensee ist es nicht weit – einige Kundinnen und Kunden aus der Schweiz kommen bewusst nach Friedrichshafen, um Thomas persönlich gegenüberzusitzen. Andere entscheiden sich für die telefonische Beratung, die genauso persönlich und diskret abläuft.</p>
+<h2>Zwei Wege zu Thomas</h2>
+<ul class="tick-list">
+  <li>Persönlich in Friedrichshafen – nur eine kurze Fahrt über die Grenze</li>
+  <li>Telefonisch – ohne Anreise, aus der ganzen Schweiz erreichbar</li>
+  <li>Zahlung und Ablauf werden bei der Anfrage unkompliziert geklärt</li>
+</ul>
+<h2>So läuft es ab</h2>
+<p>Du meldest dich per WhatsApp oder Telefon, ihr vereinbart einen Termin, und Thomas nimmt sich Zeit für dein Anliegen – ganz gleich, ob du anreist oder anrufst.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Bodenständig statt abgehoben, ehrlich statt beschönigend. Thomas verspricht keine Wunder – er hilft dir, deine Situation klarer zu sehen.</p>
+""",
+        "faq": [
+            ("Kommen wirklich Kundinnen und Kunden aus der Schweiz zu Thomas?",
+             "Ja, das kommt vor – der Bodensee liegt direkt an der Grenze, und für manche ist der persönliche Termin die Reise wert."),
+            ("Wie bezahle ich als Kundin oder Kunde aus der Schweiz?",
+             "Das besprecht ihr unkompliziert bei der Terminanfrage – Details dazu erfährst du direkt von Thomas."),
+        ],
+        "wa": "Hallo Thomas, ich komme aus Zürich und interessiere mich für eine Beratung.",
     },
 ]
 
@@ -1683,9 +1847,13 @@ def main():
 
 Thomas Lude ist Kartenleger aus Friedrichshafen am Bodensee.
 Er bietet an: persönliche Kartenberatung in Friedrichshafen, telefonische
-Kartenberatung, Kartenabende für Events (JGA, Mädelsabend, Geburtstage) rund um
-den Bodensee sowie energetische Tierbegleitung (kein Ersatz für tierärztliche
-Behandlung).
+Kartenberatung (bundesweit und in der Schweiz erreichbar), Kartenabende für
+Events (JGA, Mädelsabend, Geburtstage) rund um den Bodensee sowie energetische
+Tierbegleitung (kein Ersatz für tierärztliche Behandlung).
+
+Einzugsgebiet: Bodenseeregion (Friedrichshafen, Meersburg, Überlingen,
+Konstanz, Lindau, Ravensburg) persönlich; telefonisch auch für Kundinnen und
+Kunden aus München, Augsburg, Ulm, Memmingen sowie Zürich und der Schweiz.
 
 Kernbotschaft: Manchmal braucht es einen anderen Blick.
 Haltung: Keine Heils- oder Zukunftsversprechen, keine Angstmache, Diskretion.
@@ -1694,10 +1862,17 @@ Kontakt: %s, %s
 ## Wichtige Seiten
 - Startseite: %s/
 - Kartenlegen Friedrichshafen: %s/kartenlegen-friedrichshafen/
+- Kartenlegen München: %s/kartenlegen-muenchen/
+- Kartenlegen Augsburg: %s/kartenlegen-augsburg/
+- Kartenlegen Ulm: %s/kartenlegen-ulm/
+- Kartenlegen Memmingen: %s/kartenlegen-memmingen/
+- Kartenlegen Zürich & Schweiz: %s/kartenlegen-zuerich/
+- Telefonische Beratung: %s/kartenlegen-telefonisch/
 - JGA am Bodensee: %s/kartenlegen-junggesellinnenabschied-bodensee/
 - Tier & Mensch: %s/tier-mensch/
 - Kontakt: %s/kontakt-termin/
-""" % (PHONE, EMAIL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL))
+""" % (PHONE, EMAIL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL,
+       SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL))
 
     # .nojekyll (GitHub Pages: Jekyll-Verarbeitung abschalten)
     open(os.path.join(OUT, ".nojekyll"), "w").close()
