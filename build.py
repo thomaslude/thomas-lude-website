@@ -1795,7 +1795,7 @@ def blog_body():
   <div class="container">
     <div class="section-head left" style="text-align:left;">
       <h2>Alle Beiträge</h2>
-      <p class="lead">Jeder Text ist so geschrieben, dass er für Menschen, Suchmaschinen und Antwortsysteme eigenständig verständlich ist.</p>
+      <p class="lead">Jeder Beitrag geht einem einzigen Thema in Ruhe auf den Grund – zum Lesen, Wiederkommen oder als erster Schritt vor einem persönlichen Gespräch.</p>
     </div>
     <div class="card-grid three">
 %(cards)s
