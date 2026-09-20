@@ -153,6 +153,7 @@ NAV = [
     ("/kartenlegen-friedrichshafen/", "Kartenlegen"),
     ("/events/", "Events"),
     ("/tier-mensch/", "Tier &amp; Mensch"),
+    ("/vortexkey/", "VortexKey"),
     ("/ueber-thomas-lude/", "Über mich"),
     ("/erfahrungen/", "Erfahrungen"),
     ("/blog/", "Blog"),
@@ -308,6 +309,7 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
         <li><a href="/kartenlegen-hochzeit/">Hochzeit</a></li>
         <li><a href="/kartenlegen-firmenfeier/">Firmenfeier</a></li>
         <li><a href="/tier-mensch/">Tier &amp; Mensch</a></li>
+        <li><a href="/vortexkey/">Kooperation mit VortexKey</a></li>
         <li><a href="/ueber-thomas-lude/">Über Thomas</a></li>
         <li><a href="/ratgeber/">Ratgeber</a></li>
         <li><a href="/blog/">Blog</a></li>
@@ -539,6 +541,18 @@ def home_body():
       </div>
       <p class="tag-note">Energetische Begleitung ersetzt keine tierärztliche Diagnose oder Behandlung.</p>
     </div>
+  </div>
+</section>
+
+<!-- VORTEXKEY -->
+<section class="section" id="vortexkey">
+  <div class="container prose" style="max-width:760px;text-align:center;">
+    <p class="eyebrow">Kooperation mit VortexKey</p>
+    <h2>Verstehen, warum – und wissen, wohin.</h2>
+    <p>Manche Fragen lassen sich nicht allein mit dem Blick nach vorn beantworten. Die Human-Design- und Aura-Analyse von VortexKey zeigt, warum ein Muster überhaupt entstanden ist. Meine Kartenlegung führt weiter: Wohin entwickelt sich das jetzt konkret?</p>
+      <div class="cta-row" style="justify-content:center;">
+        <a class="btn btn-gold" href="/vortexkey/">Mehr zur Kooperation →</a>
+      </div>
   </div>
 </section>
 
@@ -1581,6 +1595,31 @@ def tier_body():
 
 
 # ----------------------------------------------------------------------------
+# VORTEXKEY – Kooperation
+# ----------------------------------------------------------------------------
+def vortexkey_body():
+    return landing_body(
+        eyebrow="Kooperation mit VortexKey",
+        h1="Verstehen, warum – und wissen, wohin",
+        lead="Manche Fragen lassen sich nicht allein mit dem Blick nach vorn beantworten. Bevor klar wird, wohin ein Weg führt, hilft es oft zu verstehen, warum bestimmte Muster überhaupt entstanden sind.",
+        image="thomas-lude-ueber-thomas-kartenlegen",
+        image_alt="Thomas Lude an seinem Kartentisch, konzentriert bei einer Kartenlegung",
+        prose="""
+<h2>Woher ein Muster kommt</h2>
+<p>Muster, die sich immer wieder in deinem Leben zeigen, verstecken sich oft in blinden Flecken – Stellen, die man selbst am schwersten sieht. Genau hier setzt die Human-Design- und Aura-Analyse von <a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener">VortexKey</a> an: Sie zeigt, warum du bist, wie du bist, und woher bestimmte Verhaltensmuster kommen, die dir bisher vielleicht nicht bewusst waren.</p>
+<h2>Wohin sich das jetzt entwickelt</h2>
+<p>Meine Kartenlegung setzt an diesem Punkt an und führt weiter: Wohin entwickelt sich das jetzt konkret? Welche Entscheidung steht an, welches Zeitfenster ist relevant? Direkt, ehrlich und bodenständig – ohne esoterisches Theater.</p>
+<h2>Wer beide Schritte kombiniert</h2>
+<p>...hat nicht nur eine Standortbestimmung, sondern auch eine Richtung. Die VortexKey-Analyse und meine Kartenlegung bauen bewusst aufeinander auf: erst der Blick nach innen, dann der Blick nach vorn.</p>
+<p><a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener"><strong>Zur VortexKey-Analyse &rarr;</strong></a></p>
+""",
+        whatsapp_msg="Hallo Thomas, ich interessiere mich für die Kombination aus VortexKey-Analyse und Kartenlegung.",
+        cta_title="Erst Klarheit, dann Richtung.",
+        cta_text="Schreib kurz, worum es geht – Thomas meldet sich persönlich.",
+    )
+
+
+# ----------------------------------------------------------------------------
 # ÜBER THOMAS
 # ----------------------------------------------------------------------------
 def ueber_body():
@@ -2146,6 +2185,9 @@ def main():
     write_page("tier-mensch", "Energetische Tierbegleitung am Bodensee | Thomas Lude",
                "Energetische Begleitung für Tiere und ihre Menschen am Bodensee – ruhig und achtsam. Ergänzend zur tierärztlichen Versorgung.",
                tier_body())
+    write_page("vortexkey", "Verstehen, warum – und wissen, wohin | Kooperation mit VortexKey | Thomas Lude",
+               "Kartenlegung als Ergänzung zur Human-Design- und Aura-Analyse von VortexKey: erst verstehen, warum ein Muster entsteht – dann wissen, wohin der Weg führt.",
+               vortexkey_body())
     write_page("ueber-thomas-lude", "Thomas Lude – Kartenleger am Bodensee | Über mich",
                "Thomas Lude ist Kartenleger aus Friedrichshafen: bodenständig, direkt und diskret. Erfahre, wie er arbeitet und was dich erwartet.",
                ueber_body())
@@ -2193,7 +2235,7 @@ def main():
 
     # sitemap.xml
     slugs = [""] + [p["slug"] for p in LANDING_PAGES] + [
-        "events", "kartenlegen-junggesellinnenabschied-bodensee", "tier-mensch",
+        "events", "kartenlegen-junggesellinnenabschied-bodensee", "tier-mensch", "vortexkey",
         "ueber-thomas-lude", "erfahrungen", "faq-kartenlegen", "ratgeber",
         "blog", "kontakt-termin", "impressum", "datenschutz",
     ] + ["blog/" + p["slug"] for p in BLOG_POSTS]
@@ -2235,6 +2277,7 @@ Kontakt: {phone}, {email}
 - JGA am Bodensee: {u}/kartenlegen-junggesellinnenabschied-bodensee/
 - Hausbesuch & Raumklärung: {u}/hausbesuch-raumklaerung/
 - Tier & Mensch: {u}/tier-mensch/
+- Kooperation mit VortexKey (Human-Design-/Aura-Analyse + Kartenlegung): {u}/vortexkey/
 - Blog: {u}/blog/
 - Kontakt: {u}/kontakt-termin/
 
