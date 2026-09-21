@@ -1645,6 +1645,209 @@ def tier_body():
 
 
 # ----------------------------------------------------------------------------
+# VORTEXKEY KOMPASS – Partner-Erklärung (Gastbeitrag von VortexKey)
+# ----------------------------------------------------------------------------
+def kompass_body():
+    return """
+<section class="section">
+  <div class="container prose" style="max-width:760px;">
+    <p class="eyebrow">Erklärung meines Kooperationspartners</p>
+    <h1>Der VortexKey Kompass</h1>
+    <p class="lead">Die folgende Seite ist die Erklärung meines Kooperationspartners VortexKey, in dessen eigenen Worten und eigenem Design – warum die Zusammenarbeit zwischen VortexKey und mir Sinn ergibt. Ich bleibe für dich weiterhin Kartenleger; VortexKey beschreibt hier die ergänzende Perspektive von Kristina Helwig.</p>
+  </div>
+</section>
+
+<div class="kompass-page">
+<style>
+.kompass-page{font-family:Georgia,serif;color:#333;line-height:1.6}
+.kompass-page img{max-width:100%;display:block}
+.kompass-page a{color:#b8942e;text-decoration:none}
+.kompass-page section{padding:64px 24px}
+.kompass-page .k-container{max-width:1100px;margin:0 auto}
+.kompass-page .k-label{color:#b8942e;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:12px}
+.kompass-page h2{font-size:clamp(1.6rem,3vw,2.2rem);color:#1a1a1a;margin-bottom:16px;font-family:Georgia,serif;}
+.kompass-page .k-dark{background:#1a1a1a;color:#fff}
+.kompass-page .k-dark h2{color:#fff}
+.kompass-page .k-cream{background:#f8f5f0}
+.kompass-page .k-hero{background:linear-gradient(135deg,#1a1a1a 0%,#2d2520 50%,#1a1a1a 100%);position:relative;overflow:hidden;padding:90px 24px;text-align:center;min-height:460px;display:flex;align-items:center;justify-content:center}
+.kompass-page .k-hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.3;z-index:0}
+.kompass-page .k-hero-bg img{width:100%;height:100%;object-fit:cover}
+.kompass-page .k-hero-content{position:relative;z-index:1;max-width:800px;margin:0 auto}
+.kompass-page .k-badge{display:inline-block;padding:8px 20px;border:1px solid #d4a849;color:#d4a849;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+.kompass-page .k-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;line-height:1.3;margin-bottom:24px;font-family:Georgia,serif;}
+.kompass-page .k-hero h1 em{color:#d4a849;font-style:normal}
+.kompass-page .k-hero p{color:rgba(255,255,255,.85);font-size:18px;line-height:1.8;margin-bottom:32px}
+.kompass-page .k-btn{display:inline-block;padding:16px 32px;background:#b8942e;color:#fff;border-radius:8px;font-weight:600;margin:8px}
+.kompass-page .k-btn:hover{background:#d4a849}
+.kompass-page .k-btn-outline{background:transparent;border:2px solid rgba(255,255,255,.3);color:#fff}
+.kompass-page .k-btn-outline:hover{border-color:#d4a849;color:#d4a849;background:rgba(184,148,46,.1)}
+.kompass-page .k-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px}
+.kompass-page .k-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.kompass-page .k-card-img{height:180px;overflow:hidden}
+.kompass-page .k-card-img img{width:100%;height:100%;object-fit:cover}
+.kompass-page .k-card-body{padding:24px}
+.kompass-page .k-card-badge{width:40px;height:40px;border-radius:50%;background:#b8942e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;margin-bottom:10px}
+.kompass-page .k-card h3{font-size:16px;margin-bottom:8px}
+.kompass-page .k-card p{font-size:14px;color:#666;line-height:1.6}
+.kompass-page .k-two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:768px){.kompass-page .k-two-col{grid-template-columns:1fr}.kompass-page .k-card-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.kompass-page .k-card-grid{grid-template-columns:1fr}}
+</style>
+
+<section class="k-hero">
+  <div class="k-hero-bg"><img src="/assets/img/kompass-zug-weichen.webp" alt="Dampfzug fährt bei Sonnenaufgang auf eine Weiche zu, an der sich die Gleise teilen"></div>
+  <div class="k-hero-content">
+    <div class="k-badge">VortexKey Kompass</div>
+    <h1>Du siehst die Richtung.<br>Aber verstehst du auch<br><em>dein Gleis?</em></h1>
+    <p>Du kommst zu Thomas, weil du wissen willst, wohin dein Weg führt. Er zeigt dir die Weichen, die sich öffnen. Und: Je klarer du verstehst, wer du wirklich bist, desto gezielter kann er mit den Karten ansetzen. Deshalb arbeitet Thomas mit Kristina zusammen.</p>
+    <div>
+      <a href="https://vortexkey.de/" class="k-btn" target="_blank" rel="noopener">VortexKey entdecken →</a>
+      <a href="#metapher" class="k-btn k-btn-outline">Wie das zusammenspielt</a>
+    </div>
+  </div>
+</section>
+
+<section id="metapher" class="k-cream">
+  <div class="k-container" style="max-width:900px">
+    <div style="text-align:center;margin-bottom:40px">
+      <span class="k-label">Die Weichen-Methode</span>
+      <h2>Warum Kristina und Thomas zusammenarbeiten.</h2>
+    </div>
+    <div style="margin:32px 0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.12)">
+      <img src="/assets/img/kompass-stellwerk.webp" alt="Blick aus einem alten Stellwerk auf die Gleise bei Abenddämmerung" style="width:100%">
+      <p style="padding:12px 16px;margin:0;font-size:13px;color:#666;background:#fff;font-style:italic">Du sitzt im Zug — aber du siehst nicht die Weichen. Der Kompass will das ändern.</p>
+    </div>
+    <div style="font-size:17px;line-height:1.9;color:#333">
+      <p style="margin-bottom:20px"><strong>Stell dir dein Leben als Zug vor.</strong></p>
+      <p style="margin-bottom:16px">Ein Zug, der schon lange fährt. An manchen Stationen steigen Menschen ein. An anderen steigen sie aus. Das ist normal.</p>
+      <p style="margin-bottom:16px">Aber hier ist das Problem: <strong>Du sitzt im Zug, nicht im Stellwerk.</strong> Du siehst die Gleise vor dir, aber du siehst nicht die Weichen. Du fährst weiter — und merkst erst zu spät, dass du schon wieder dieselbe Strecke genommen hast.</p>
+      <div style="padding:20px;background:rgba(184,148,46,.08);border-left:3px solid #b8942e;border-radius:0 8px 8px 0;margin:20px 0">
+        <strong style="color:#b8942e">Das ist der Kompass.</strong> Nicht nur Thomas' Karten. Nicht nur Kristinas Human Design. Beides zusammen.
+      </div>
+      <div style="margin:32px 0;padding-left:24px;border-left:2px solid #b8942e">
+        <p style="margin-bottom:16px"><strong style="color:#b8942e">1. Kristina zeigt dir, wo du stehst.</strong><br>Sie liest dein Human Design. Sie erkennt die Struktur hinter deinen Mustern.</p>
+        <p><strong style="color:#b8942e">2. Thomas zeigt dir, welche Richtung sich öffnet.</strong><br>Er legt die Karten für deinen Weg — aber nicht als festes Schicksal. Sondern als Möglichkeit.</p>
+      </div>
+      <p style="margin-bottom:16px"><strong>Und das Entscheidende:</strong> Was sich zeigt, ändert sich, wenn du dich änderst. Es ist kein festes Schicksal. Es ist dein <em>Potenzial</em>.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="k-container">
+    <div style="text-align:center;margin-bottom:40px">
+      <span class="k-label">Die Reise</span>
+      <h2>Vier Stationen. Eine Richtung.</h2>
+    </div>
+    <div class="k-card-grid">
+      <div class="k-card">
+        <div class="k-card-img"><img src="/assets/img/kompass-zug-weichen.webp" alt="Gleise, die sich vor einem fahrenden Zug teilen"></div>
+        <div class="k-card-body">
+          <div class="k-card-badge">GLEIS</div>
+          <h3>Wo stehst du?</h3>
+          <p><strong>Kristina</strong> liest dein Human Design. Deine Struktur. Deine Stärken.</p>
+        </div>
+      </div>
+      <div class="k-card">
+        <div class="k-card-img"><img src="/assets/img/kompass-weiche-entscheidung.webp" alt="Nahaufnahme einer Bahnweiche, an der sich zwei Gleise trennen"></div>
+        <div class="k-card-body">
+          <div class="k-card-badge">WEICHE</div>
+          <h3>Welche Richtung?</h3>
+          <p><strong>Thomas</strong> legt die Karten. Die Weichen, die sich durch deine Klarheit öffnen.</p>
+        </div>
+      </div>
+      <div class="k-card">
+        <div class="k-card-img" style="background:linear-gradient(135deg,#2d2520,#1a1a1a);display:flex;align-items:center;justify-content:center">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4a849" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="k-card-body">
+          <div class="k-card-badge">WEG</div>
+          <h3>Wohin gehst du?</h3>
+          <p>Die Entscheidung ist deine — aber jetzt basiert sie auf mehr Klarheit.</p>
+        </div>
+      </div>
+      <div class="k-card">
+        <div class="k-card-img"><img src="/assets/img/kompass-bahnhof-menschen.webp" alt="Reisende auf einem historischen Bahnhof im goldenen Licht"></div>
+        <div class="k-card-body">
+          <div class="k-card-badge">ZUG</div>
+          <h3>Wer fährt mit?</h3>
+          <p>Neue Weiche, neue Strecke, neue Menschen. Platz für die Richtigen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="k-dark">
+  <div class="k-container">
+    <div style="text-align:center;margin-bottom:40px">
+      <span class="k-label" style="color:#d4a849">In beide Richtungen</span>
+      <h2>Egal, wo du einsteigst — du kommst zu mehr Klarheit.</h2>
+    </div>
+    <div class="k-two-col" style="margin-top:40px">
+      <div style="padding:32px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px">
+        <div style="width:40px;height:40px;border-radius:50%;background:#b8942e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:16px">1</div>
+        <h3 style="color:#fff;font-size:18px;margin-bottom:10px">Du kommst von Kristina</h3>
+        <p style="color:rgba(255,255,255,.7);font-size:15px;line-height:1.7">Du weißt, wo du stehst. Du verstehst dein Human Design. Aber du fragst dich: <em>Und jetzt?</em> Welche Weichen stehen offen?</p>
+        <p style="color:rgba(255,255,255,.7);font-size:15px;line-height:1.7;margin-top:12px"><strong>Thomas zeigt dir eine Richtung.</strong> Die Karten für deinen nächsten Schritt.</p>
+      </div>
+      <div style="padding:32px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px">
+        <div style="width:40px;height:40px;border-radius:50%;background:#b8942e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:16px">2</div>
+        <h3 style="color:#fff;font-size:18px;margin-bottom:10px">Du kommst von Thomas</h3>
+        <p style="color:rgba(255,255,255,.7);font-size:15px;line-height:1.7">Du siehst eine Richtung. Du weißt, welche Weichen sich öffnen. Aber du fragst dich: <em>Warum bin ich hier?</em></p>
+        <p style="color:rgba(255,255,255,.7);font-size:15px;line-height:1.7;margin-top:12px"><strong>Kristina zeigt dir die Struktur.</strong> Dein Human Design.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;padding:20px;background:rgba(184,148,46,.1);border-radius:12px">
+      <p style="font-size:15px;color:#fff;margin:0"><strong style="color:#d4a849">Das ist die Idee des Kompass:</strong> Er funktioniert vorwärts und rückwärts. Er ergänzt Kristina. Er ergänzt Thomas. Und er gibt dir mehr Klarheit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="k-cream">
+  <div class="k-container">
+    <div style="text-align:center;margin-bottom:40px">
+      <span class="k-label">Konkret für dich</span>
+      <h2>Was passiert, wenn du beides kombinierst?</h2>
+    </div>
+    <div class="k-two-col">
+      <div style="padding:28px;background:#fff;border-radius:12px">
+        <h3 style="font-size:17px;margin-bottom:10px;color:#b8942e">Du erkennst deine Muster</h3>
+        <p style="font-size:15px;line-height:1.7;color:#555">Warum ziehst du immer wieder dieselben Situationen an? Warum endet es oft ähnlich? Kristina zeigt dir die Struktur — nicht als Verurteilung, sondern als Landkarte.</p>
+      </div>
+      <div style="padding:28px;background:#fff;border-radius:12px">
+        <h3 style="font-size:17px;margin-bottom:10px;color:#b8942e">Du siehst neue Weichen</h3>
+        <p style="font-size:15px;line-height:1.7;color:#555">Die Stellen, an denen du immer wieder dieselbe Abzweigung genommen hast — jetzt siehst du sie. Und du siehst: Es gibt andere Wege.</p>
+      </div>
+      <div style="padding:28px;background:#fff;border-radius:12px">
+        <h3 style="font-size:17px;margin-bottom:10px;color:#b8942e">Du wählst bewusst</h3>
+        <p style="font-size:15px;line-height:1.7;color:#555">Nicht mehr automatisch fahren. Du weißt, wo du stehst. Du weißt, wohin du könntest. Und du entscheidest — bewusst, klar, in deinem eigenen Tempo.</p>
+      </div>
+      <div style="padding:28px;background:#fff;border-radius:12px">
+        <h3 style="font-size:17px;margin-bottom:10px;color:#b8942e">Neue Menschen, neue Strecke</h3>
+        <p style="font-size:15px;line-height:1.7;color:#555">An jeder neuen Weiche steigen Menschen ein und aus. Du darfst alte Begleiter loslassen. Du darfst Platz machen für die, die zu deiner neuen Richtung passen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="k-dark" style="text-align:center">
+  <div class="k-container" style="max-width:640px">
+    <span class="k-label" style="color:#d4a849">Neugierig?</span>
+    <h2 style="color:#fff;margin-top:8px">Lass uns deine Weichen finden.</h2>
+    <p style="font-size:17px;color:rgba(255,255,255,.8);line-height:1.8;margin:24px 0">Der Kompass ist mehr als eine Kartenlegung. Er ist mehr als ein Human-Design-Reading. Er ist die Kombination beider Blickwinkel.</p>
+    <div style="margin:32px 0">
+      <a href="https://vortexkey.de/" class="k-btn" target="_blank" rel="noopener">Zu VortexKey →</a>
+      <a href="/kontakt-termin/" class="k-btn k-btn-outline">Termin bei Thomas</a>
+    </div>
+    <p style="color:rgba(255,255,255,.4);font-size:13px;margin-top:24px">Du bleibst bei Thomas als Kartenleger. Der Kompass ergänzt seine Arbeit — er ersetzt sie nicht.</p>
+  </div>
+</section>
+</div>
+"""
+
+
+# ----------------------------------------------------------------------------
 # ERGÄNZENDE IMPULSE – Verweise auf andere Systeme (u.a. VortexKey)
 # ----------------------------------------------------------------------------
 def ergaenzende_impulse_body():
@@ -1673,7 +1876,7 @@ def ergaenzende_impulse_body():
 <p>Ich arbeite mit den Karten – direkt, bodenständig und ohne esoterisches Theater. Für die meisten Fragen reicht das völlig aus. Wer zusätzlich noch tiefer schauen möchte, findet hier zwei Anknüpfungspunkte, die ich für sinnvoll halte.</p>
 
 <h3>VortexKey – Muster und blinde Flecken verstehen</h3>
-<p>Wenn du nicht nur nach vorn schauen, sondern auch besser verstehen möchtest, warum du heute an diesem Punkt stehst, empfehle ich dir ergänzend die Arbeit von <a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener">VortexKey</a>. Die VortexKey-Methode richtet den Blick auf das, was im bisherigen Leben oft unbemerkt mitgewirkt hat: wiederkehrende Muster, innere Konflikte und blinde Flecken. Sie bietet einen klaren, begleiteten Rahmen, um die eigenen Erfahrungen bewusster einzuordnen.</p>
+<p>Wenn du nicht nur nach vorn schauen, sondern auch besser verstehen möchtest, warum du heute an diesem Punkt stehst, empfehle ich dir ergänzend die Arbeit von <a href="https://vortexkey.de/" target="_blank" rel="noopener">VortexKey</a>. Die VortexKey-Methode richtet den Blick auf das, was im bisherigen Leben oft unbemerkt mitgewirkt hat: wiederkehrende Muster, innere Konflikte und blinde Flecken. Sie bietet einen klaren, begleiteten Rahmen, um die eigenen Erfahrungen bewusster einzuordnen.</p>
 
 <div class="card-grid two">
   <article class="card">
@@ -1701,7 +1904,8 @@ def ergaenzende_impulse_body():
 </div>
 
 <p>Die Arbeit mit VortexKey kann vor einer Kartenlegung wertvoll sein, um innere Themen zu sortieren – oder danach, um einen Impuls tiefer in deinen Alltag zu übersetzen. Wer beide Schritte kombiniert, hat nicht nur eine Standortbestimmung, sondern auch eine Richtung: erst der Blick nach innen, dann der Blick nach vorn.</p>
-<p><a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener"><strong>Mehr über die VortexKey-Methode erfahren &rarr;</strong></a></p>
+<p><a href="https://vortexkey.de/" target="_blank" rel="noopener"><strong>Mehr über die VortexKey-Methode erfahren &rarr;</strong></a><br>
+<a href="/vortexkey-kompass/"><strong>Warum die Zusammenarbeit Sinn ergibt – Erklärung von VortexKey &rarr;</strong></a></p>
 """ + """
 <section class="article-figure">
   <div class="container">
@@ -2300,6 +2504,9 @@ def main():
     write_page("ergaenzende-impulse", "Wenn ein zweiter Blick hilft | Ergänzende Impulse | Thomas Lude",
                "Thomas' Kartenlegung steht für sich. Für einzelne Themen verweist er ergänzend auf ausgewählte andere Systeme wie VortexKey sowie auf behutsame Impulse zu beruflichen und finanziellen Entscheidungen.",
                ergaenzende_impulse_body())
+    write_page("vortexkey-kompass", "Der VortexKey Kompass | Thomas Lude",
+               "Eine Erklärung von Thomas' Kooperationspartner VortexKey, in dessen eigenen Worten: warum die Kombination aus Kristinas Human-Design-Perspektive und Thomas' Kartenlegung Sinn ergibt.",
+               kompass_body())
     write_page("ueber-thomas-lude", "Thomas Lude – Kartenleger am Bodensee | Über mich",
                "Thomas Lude ist Kartenleger aus Friedrichshafen: bodenständig, direkt und diskret. Erfahre, wie er arbeitet und was dich erwartet.",
                ueber_body())
@@ -2348,6 +2555,7 @@ def main():
     # sitemap.xml
     slugs = [""] + [p["slug"] for p in LANDING_PAGES] + [
         "events", "kartenlegen-junggesellinnenabschied-bodensee", "tier-mensch", "ergaenzende-impulse",
+        "vortexkey-kompass",
         "ueber-thomas-lude", "erfahrungen", "faq-kartenlegen", "ratgeber",
         "blog", "kontakt-termin", "impressum", "datenschutz",
     ] + ["blog/" + p["slug"] for p in BLOG_POSTS]
