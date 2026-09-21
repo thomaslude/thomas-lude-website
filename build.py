@@ -74,6 +74,7 @@ IMG_META = {
     "blog-verlust-wiedergeburt-sinnfragen":             (1536, 1024),
     "blog-karmische-aufgaben":                          (1536, 1024),
     "vortexkey-thomas-lude-weiche":                     (1672, 941),
+    "kartenlegen-hauskauf-umzug":                        (1672, 941),
 }
 
 def img(base, alt, sizes="(max-width: 768px) 100vw, 50vw", loading="lazy", fetchpriority="", css_class=""):
@@ -473,6 +474,14 @@ def home_body():
           <a class="link-more" href="/kartenlegen-beruf-veraenderung/">Mehr erfahren</a>
         </div>
       </article>
+      <article class="card">
+        <a class="card-image" href="/kartenlegen-hauskauf-umzug/">%(card_hauskauf)s</a>
+        <div class="card-body">
+          <h3><a href="/kartenlegen-hauskauf-umzug/">Hauskauf &amp; Umzug</a></h3>
+          <p>Kaufen, mieten, umziehen oder neu anfangen – ein Blick auf die persönliche Seite der Entscheidung.</p>
+          <a class="link-more" href="/kartenlegen-hauskauf-umzug/">Mehr erfahren</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -686,6 +695,7 @@ def home_body():
         "card_liebe": img("thomas-lude-kartenlegen-liebe-beziehung", "Thomas Lude legt Karten zu einer Frage rund um Liebe und Beziehung"),
         "card_entscheidung": img("thomas-lude-kartenlegen-beratung-am-tisch", "Thomas Lude am runden Kartentisch mit ausgelegten Karten und Kerze"),
         "card_beruf": img("thomas-lude-ueber-thomas-kartenlegen", "Thomas Lude bei einer Beratung im hellen Wintergarten am Bodensee"),
+        "card_hauskauf": img("kartenlegen-hauskauf-umzug", "Schreibtisch mit Kartenset, Kompass und Hausschlüssel vor einem Wegweiser mit den Richtungen Kaufen, Vermieten, Umzug und Neu beginnen"),
         "ueber_img": img("thomas-lude-ueber-thomas-kartenlegen", "Thomas Lude sitzt freundlich an seinem Kartentisch und lächelt"),
         "jga_img": img("thomas-lude-kartenlegen-jga-bodensee", "Kartenabend mit Thomas Lude bei einem Junggesellinnenabschied: Braut mit Schleier und Freundinnen am gedeckten Tisch"),
         "tier_img": img("thomas-lude-tierbegleitung-bodensee", "Thomas Lude legt einem entspannten Golden Retriever ruhig die Hände auf"),
@@ -911,13 +921,53 @@ LANDING_PAGES = [
 </ul>
 <h2>Geschäftliche Entscheidungen</h2>
 <p>Manche Entscheidungen lassen sich nicht allein mit Zahlen oder Listen lösen. Für Selbstständige und Unternehmer, die vor wichtigen Weichenstellungen stehen, kann eine Beratung helfen, die eigene Intuition bewusster mit einzubeziehen – neben Kopf auch Bauch.</p>
-<h2>Haus, Umzug &amp; größere Vorhaben</h2>
-<p>Ein Zuhause, ein Umzug oder ein größeres Vorhaben löst oft viele Fragen aus, die über reine Zahlen hinausgehen. Thomas eröffnet dazu einen intuitiven Blick auf die persönlichen Fragen dahinter – nicht auf Marktwert, Finanzierung oder rechtliche Details.</p>
 <h2>So läuft eine Beratung ab</h2>
 <p>Du erzählst, wo du stehst und was dich beschäftigt. Thomas legt die Karten und bespricht mit dir, welche Tendenzen und Möglichkeiten sich zeigen – persönlich in Friedrichshafen oder am Telefon.</p>
 <h2>Warum Thomas Lude</h2>
 <p>Thomas ist Kartenleger, kein Finanz-, Karriere-, Rechts- oder Immobilienberater. Er gibt keine Erfolgsgarantien und keine Empfehlung zum Kauf, Verkauf oder Halten von Geldanlagen, Wertpapieren oder Immobilien. Was er kann: dir helfen, deine Situation klarer zu sehen – damit du deine Entscheidung eigenverantwortlich und mit mehr Ruhe triffst, gegebenenfalls nach Rücksprache mit entsprechend qualifizierten Fachleuten.</p>
+<p>Steht eher ein Hauskauf, Umzug oder Neubeginn an? Dafür gibt es eine <a href="/kartenlegen-hauskauf-umzug/">eigene Seite zu Hauskauf, Umzug &amp; finanziellen Entscheidungen</a>.</p>
 """,
+    },
+    # --- Thema: Hauskauf, Umzug & finanzielle Entscheidungen ---
+    {
+        "slug": "kartenlegen-hauskauf-umzug",
+        "title": "Kartenlegen bei Hauskauf, Umzug & finanziellen Entscheidungen | Thomas Lude",
+        "desc": "Kaufen, mieten, umziehen oder neu anfangen? Kartenlegen mit Thomas Lude gibt einen intuitiven Blick auf die persönliche Seite der Entscheidung – ohne Anlage- oder Rechtsberatung.",
+        "eyebrow": "Neuer Lebensabschnitt",
+        "h1": "Kartenlegen bei Hauskauf, Umzug &amp; finanziellen Entscheidungen",
+        "lead": "Kaufen oder mieten? Bleiben oder umziehen? Neu anfangen? Bei Entscheidungen mit langer Tragweite hilft manchmal ein Blick auf die persönliche Seite dahinter.",
+        "image": "kartenlegen-hauskauf-umzug",
+        "alt": "Schreibtisch mit Kartenset, Kompass, Bauplan und Hausschlüssel vor einem Wegweiser mit den Richtungen Kaufen, Vermieten, Umzug und Neu beginnen, im Hintergrund ein Haus am Bodensee bei Sonnenuntergang",
+        "prose": """
+<h2>Wenn eine Entscheidung über den Alltag hinausgeht</h2>
+<p>Hauskauf, Umzug, ein Ortswechsel oder eine größere finanzielle Weichenstellung – solche Entscheidungen wirken nüchtern, sind es aber selten. Sie berühren Sicherheit, Familie und die Frage, wo und wie man leben möchte. Ein Blick, der nicht nur auf Zahlen schaut, kann helfen, die eigene Haltung dazu klarer zu sehen.</p>
+<h2>Was Kartenlegen bei diesen Fragen leisten kann</h2>
+<ul class="tick-list">
+  <li>Kaufen, mieten oder abwarten – die eigene Haltung dazu sortieren</li>
+  <li>Umzug oder Ortswechsel: was wirklich dahintersteckt</li>
+  <li>Neubeginn nach Trennung, Jobwechsel oder Lebensveränderung</li>
+  <li>Finanzielle Entscheidungen mit Bauchgefühl statt nur mit Kopf betrachten</li>
+</ul>
+<h2>Kaufen, mieten oder abwarten</h2>
+<p>Die Frage nach Eigentum oder Miete ist oft mehr als eine Rechenaufgabe – sie hängt mit Sicherheit, Bindung und dem Bild vom eigenen Leben zusammen. Ich schaue mit dir auf die persönliche Seite dieser Entscheidung, nicht auf Marktwert oder Finanzierung.</p>
+<h2>Umzug &amp; Neubeginn</h2>
+<p>Ein Ortswechsel bringt oft mehr durcheinander als gedacht – alte Bindungen, neue Erwartungen, die Frage, ob der Schritt wirklich stimmt. Ein Kartenlegen kann helfen, diese Gedanken zu ordnen, bevor die Entscheidung fällt.</p>
+<h2>So läuft eine Beratung ab</h2>
+<p>Du erzählst, wo du stehst und was dich beschäftigt. Thomas legt die Karten und bespricht mit dir, welche Tendenzen und Möglichkeiten sich zeigen – persönlich in Friedrichshafen oder am Telefon.</p>
+<h2>Warum Thomas Lude</h2>
+<p>Thomas ist Kartenleger, kein Finanz-, Rechts- oder Immobilienberater. Er gibt keine Kauf-, Verkaufs- oder Anlageempfehlung und keine Erfolgsgarantie. Was er kann: dir helfen, deine Situation klarer zu sehen – damit du deine Entscheidung eigenverantwortlich triffst, gegebenenfalls nach Rücksprache mit entsprechend qualifizierten Fachleuten (Makler, Notar, Finanzberatung).</p>
+""",
+        "faq": [
+            ("Kann Kartenlegen bei der Entscheidung für oder gegen einen Hauskauf helfen?",
+             "Kartenlegen ersetzt keine Finanzierungs- oder Marktanalyse. Es kann aber helfen, die eigene Haltung zur Entscheidung klarer zu sehen – ob Kaufen, Mieten oder Warten sich für dich gerade richtig anfühlt."),
+            ("Gibt Thomas eine Empfehlung zu Kauf, Verkauf oder Geldanlage?",
+             "Nein. Thomas ist Kartenleger, keine Finanz-, Rechts- oder Immobilienberatung. Für die fachliche Seite einer Entscheidung sind entsprechend qualifizierte Fachleute die richtige Anlaufstelle."),
+            ("Hilft eine Kartenlegung auch bei einem Umzug oder Neubeginn?",
+             "Ja. Viele kommen genau in solchen Übergangsphasen – wenn vieles gleichzeitig in Bewegung ist und der eigene Kopf etwas Ordnung gebrauchen kann."),
+        ],
+        "wa": "Hallo Thomas, ich interessiere mich für eine Beratung zu einer wichtigen Entscheidung (Hauskauf/Umzug).",
+        "cta_title": "Bevor die Entscheidung fällt.",
+        "cta_text": "Schreib kurz, worum es geht – Thomas meldet sich persönlich.",
     },
     # --- Thema: Familie ---
     {
@@ -1667,9 +1717,10 @@ def ergaenzende_impulse_body():
 <p>Sobald diese Erkenntnis da ist und du bereit bist, sie anzunehmen, stellt sich die Weiche oft wie von selbst. Ein neuer Weg wird möglich. Manche Weggefährten steigen aus, andere kommen neu dazu – das gehört zu jeder echten Veränderung dazu.</p>
 <p>Genau an diesem Punkt setze ich an: Ich schaue mit dir auf die Perspektiven, die sich auf dem neuen Gleis eröffnen können, und gebe dir Impulse für den Weg, der jetzt vor dir liegt.</p>
 """ % weiche_image + """
-<h3>Berufliche &amp; finanzielle Entscheidungen</h3>
-<p>Auch bei Fragen zu Beruf, Veränderung oder größeren Vorhaben wie einem Hauskauf kann ein zweiter Blick helfen – behutsam formuliert und ausdrücklich ohne Finanz-, Rechts- oder Anlageberatung zu sein. Mehr dazu auf der eigenen Seite zu beruflichen und finanziellen Entscheidungen.</p>
-<p><a href="/kartenlegen-beruf-veraenderung/"><strong>Zu beruflichen &amp; finanziellen Entscheidungen &rarr;</strong></a></p>
+<h3>Beruf, Hauskauf &amp; finanzielle Entscheidungen</h3>
+<p>Auch bei Fragen zu Beruf, Hauskauf, Umzug oder einem finanziellen Neuanfang kann ein zweiter Blick helfen – behutsam formuliert und ausdrücklich ohne Finanz-, Rechts- oder Anlageberatung zu sein.</p>
+<p><a href="/kartenlegen-beruf-veraenderung/"><strong>Zu Beruf &amp; Veränderung &rarr;</strong></a><br>
+<a href="/kartenlegen-hauskauf-umzug/"><strong>Zu Hauskauf, Umzug &amp; finanziellen Entscheidungen &rarr;</strong></a></p>
 
 <h2>Die Zukunft entsteht aus deinem nächsten Schritt</h2>
 <p>Ich kann mit dir auf die Wege schauen, die sich aus deinem heutigen Leben heraus zeigen, und dir Impulse für mögliche Entwicklungen geben. Welche Tür du öffnest, bleibt jedoch deine Entscheidung.</p>
