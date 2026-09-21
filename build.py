@@ -154,7 +154,6 @@ NAV = [
     ("/kartenlegen-friedrichshafen/", "Kartenlegen"),
     ("/events/", "Events"),
     ("/tier-mensch/", "Tier &amp; Mensch"),
-    ("/vortexkey/", "VortexKey"),
     ("/ueber-thomas-lude/", "Über mich"),
     ("/erfahrungen/", "Erfahrungen"),
     ("/blog/", "Blog"),
@@ -310,7 +309,7 @@ def layout(slug, title, meta_desc, body, hero_preload="", extra_schema=None):
         <li><a href="/kartenlegen-hochzeit/">Hochzeit</a></li>
         <li><a href="/kartenlegen-firmenfeier/">Firmenfeier</a></li>
         <li><a href="/tier-mensch/">Tier &amp; Mensch</a></li>
-        <li><a href="/vortexkey/">Kooperation mit VortexKey</a></li>
+        <li><a href="/ergaenzende-impulse/">Ergänzende Impulse</a></li>
         <li><a href="/ueber-thomas-lude/">Über Thomas</a></li>
         <li><a href="/ratgeber/">Ratgeber</a></li>
         <li><a href="/blog/">Blog</a></li>
@@ -545,14 +544,14 @@ def home_body():
   </div>
 </section>
 
-<!-- VORTEXKEY -->
-<section class="section" id="vortexkey">
+<!-- ERGÄNZENDE IMPULSE -->
+<section class="section" id="ergaenzende-impulse">
   <div class="container prose" style="max-width:760px;text-align:center;">
-    <p class="eyebrow">Kooperation mit VortexKey</p>
-    <h2>Verstehen, warum – und wissen, wohin.</h2>
-    <p>Manche Fragen lassen sich nicht allein mit dem Blick nach vorn beantworten. Die Human-Design- und Aura-Analyse von VortexKey zeigt, warum ein Muster überhaupt entstanden ist. Meine Kartenlegung führt weiter: Wohin entwickelt sich das jetzt konkret?</p>
+    <p class="eyebrow">Ergänzende Impulse</p>
+    <h2>Manchmal hilft ein zweiter Blick.</h2>
+    <p>Für manche Fragen reicht ein Termin. Für andere – eine berufliche Weichenstellung, ein wiederkehrendes Muster, eine Entscheidung mit langer Tragweite – lohnt sich mitunter eine zweite, ergänzende Perspektive. Dafür verweise ich, wo es passt, auch auf ausgewählte andere Systeme.</p>
       <div class="cta-row" style="justify-content:center;">
-        <a class="btn btn-gold" href="/vortexkey/">Mehr zur Kooperation →</a>
+        <a class="btn btn-gold" href="/ergaenzende-impulse/">Ergänzende Impulse ansehen →</a>
       </div>
   </div>
 </section>
@@ -1596,9 +1595,9 @@ def tier_body():
 
 
 # ----------------------------------------------------------------------------
-# VORTEXKEY – Kooperation
+# ERGÄNZENDE IMPULSE – Verweise auf andere Systeme (u.a. VortexKey)
 # ----------------------------------------------------------------------------
-def vortexkey_body():
+def ergaenzende_impulse_body():
     weiche_image = img(
         "vortexkey-thomas-lude-weiche",
         "Zugstrecke mit einer Weiche vor Bergpanorama und See – Sinnbild für einen neuen Weg, sobald der alte verstanden ist",
@@ -1606,9 +1605,9 @@ def vortexkey_body():
         loading="lazy",
     )
     return landing_body(
-        eyebrow="Kooperation mit VortexKey",
-        h1="Verstehen, warum – und wissen, wohin",
-        lead="Manche Fragen lassen sich nicht allein mit dem Blick nach vorn beantworten. Bevor klar wird, wohin ein Weg führt, hilft es oft zu verstehen, warum bestimmte Muster überhaupt entstanden sind – und zu wissen: Dein Weg ist nicht festgeschrieben.",
+        eyebrow="Ergänzende Impulse",
+        h1="Wenn ein zweiter Blick hilft",
+        lead="Meine Kartenlegung steht für sich. Für einzelne Themen – ein hartnäckiges Muster, eine berufliche Weichenstellung – kann eine zweite, andersartige Perspektive zusätzliche Klarheit bringen. Deshalb verweise ich hier bewusst auf ausgewählte ergänzende Systeme.",
         image="thomas-lude-ueber-thomas-kartenlegen",
         image_alt="Thomas Lude an seinem Kartentisch, konzentriert bei einer Kartenlegung",
         prose="""
@@ -1620,7 +1619,10 @@ def vortexkey_body():
 <p>Manchmal zeigt sich in einer Sitzung sehr deutlich, welche Richtung sich aus deinem bisherigen Weg ergibt – als würde eine vertraute Tür wieder zu ähnlichen Erfahrungen führen. Das ist keine Festlegung, sondern eine Einladung zur Klarheit: Sobald du erkennst, welche Muster dich bisher begleitet haben, entsteht neuer Handlungsspielraum.</p>
 <p>Meine Arbeit kann dir einen Blick auf die Möglichkeiten geben, die vor dir liegen. Sie ersetzt aber nicht deine eigene innere Arbeit – Veränderung beginnt dort, wo du bereit bist, Verantwortung für deinen nächsten Schritt zu übernehmen.</p>
 
-<h2>Eine ergänzende Empfehlung: VortexKey</h2>
+<h2>Ausgewählte ergänzende Systeme</h2>
+<p>Ich arbeite mit den Karten – direkt, bodenständig und ohne esoterisches Theater. Für die meisten Fragen reicht das völlig aus. Wer zusätzlich noch tiefer schauen möchte, findet hier zwei Anknüpfungspunkte, die ich für sinnvoll halte.</p>
+
+<h3>VortexKey – Muster und blinde Flecken verstehen</h3>
 <p>Wenn du nicht nur nach vorn schauen, sondern auch besser verstehen möchtest, warum du heute an diesem Punkt stehst, empfehle ich dir ergänzend die Arbeit von <a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener">VortexKey</a>. Die VortexKey-Methode richtet den Blick auf das, was im bisherigen Leben oft unbemerkt mitgewirkt hat: wiederkehrende Muster, innere Konflikte und blinde Flecken. Sie bietet einen klaren, begleiteten Rahmen, um die eigenen Erfahrungen bewusster einzuordnen.</p>
 
 <div class="card-grid two">
@@ -1660,15 +1662,19 @@ def vortexkey_body():
   </div>
 </section>
 
-<h2>Wie ein Zug, der die Weiche wechselt</h2>
+<h3>Wie ein Zug, der die Weiche wechselt</h3>
 <p>Der bisherige Weg lässt sich mit einer Zugfahrt vergleichen: Du fährst auf vertrauten Gleisen, mit den Menschen und Gewohnheiten, die gerade mit dir unterwegs sind. VortexKey hilft dir zu erkennen, wo es in deinem Leben Weichen gibt – und warum du bisher genau diesen Weg gefahren bist.</p>
 <p>Sobald diese Erkenntnis da ist und du bereit bist, sie anzunehmen, stellt sich die Weiche oft wie von selbst. Ein neuer Weg wird möglich. Manche Weggefährten steigen aus, andere kommen neu dazu – das gehört zu jeder echten Veränderung dazu.</p>
 <p>Genau an diesem Punkt setze ich an: Ich schaue mit dir auf die Perspektiven, die sich auf dem neuen Gleis eröffnen können, und gebe dir Impulse für den Weg, der jetzt vor dir liegt.</p>
 """ % weiche_image + """
+<h3>Berufliche &amp; finanzielle Entscheidungen</h3>
+<p>Auch bei Fragen zu Beruf, Veränderung oder größeren Vorhaben wie einem Hauskauf kann ein zweiter Blick helfen – behutsam formuliert und ausdrücklich ohne Finanz-, Rechts- oder Anlageberatung zu sein. Mehr dazu auf der eigenen Seite zu beruflichen und finanziellen Entscheidungen.</p>
+<p><a href="/kartenlegen-beruf-veraenderung/"><strong>Zu beruflichen &amp; finanziellen Entscheidungen &rarr;</strong></a></p>
+
 <h2>Die Zukunft entsteht aus deinem nächsten Schritt</h2>
 <p>Ich kann mit dir auf die Wege schauen, die sich aus deinem heutigen Leben heraus zeigen, und dir Impulse für mögliche Entwicklungen geben. Welche Tür du öffnest, bleibt jedoch deine Entscheidung.</p>
 """,
-        whatsapp_msg="Hallo Thomas, ich interessiere mich für die Kombination aus VortexKey-Analyse und Kartenlegung.",
+        whatsapp_msg="Hallo Thomas, ich interessiere mich für eine ergänzende Perspektive zu meinem Thema.",
         cta_title="Erst Klarheit, dann Richtung.",
         cta_text="Schreib kurz, worum es geht – Thomas meldet sich persönlich.",
     )
@@ -2240,9 +2246,9 @@ def main():
     write_page("tier-mensch", "Energetische Tierbegleitung am Bodensee | Thomas Lude",
                "Energetische Begleitung für Tiere und ihre Menschen am Bodensee – ruhig und achtsam. Ergänzend zur tierärztlichen Versorgung.",
                tier_body())
-    write_page("vortexkey", "Verstehen, warum – und wissen, wohin | Kooperation mit VortexKey | Thomas Lude",
-               "Kartenlegung als Ergänzung zur Human-Design- und Aura-Analyse von VortexKey: erst verstehen, warum ein Muster entsteht – dann wissen, wohin der Weg führt.",
-               vortexkey_body())
+    write_page("ergaenzende-impulse", "Wenn ein zweiter Blick hilft | Ergänzende Impulse | Thomas Lude",
+               "Thomas' Kartenlegung steht für sich. Für einzelne Themen verweist er ergänzend auf ausgewählte andere Systeme wie VortexKey sowie auf behutsame Impulse zu beruflichen und finanziellen Entscheidungen.",
+               ergaenzende_impulse_body())
     write_page("ueber-thomas-lude", "Thomas Lude – Kartenleger am Bodensee | Über mich",
                "Thomas Lude ist Kartenleger aus Friedrichshafen: bodenständig, direkt und diskret. Erfahre, wie er arbeitet und was dich erwartet.",
                ueber_body())
@@ -2290,7 +2296,7 @@ def main():
 
     # sitemap.xml
     slugs = [""] + [p["slug"] for p in LANDING_PAGES] + [
-        "events", "kartenlegen-junggesellinnenabschied-bodensee", "tier-mensch", "vortexkey",
+        "events", "kartenlegen-junggesellinnenabschied-bodensee", "tier-mensch", "ergaenzende-impulse",
         "ueber-thomas-lude", "erfahrungen", "faq-kartenlegen", "ratgeber",
         "blog", "kontakt-termin", "impressum", "datenschutz",
     ] + ["blog/" + p["slug"] for p in BLOG_POSTS]
@@ -2332,7 +2338,7 @@ Kontakt: {phone}, {email}
 - JGA am Bodensee: {u}/kartenlegen-junggesellinnenabschied-bodensee/
 - Hausbesuch & Raumklärung: {u}/hausbesuch-raumklaerung/
 - Tier & Mensch: {u}/tier-mensch/
-- Kooperation mit VortexKey (Human-Design-/Aura-Analyse + Kartenlegung): {u}/vortexkey/
+- Ergänzende Impulse (u.a. VortexKey, berufliche/finanzielle Entscheidungen): {u}/ergaenzende-impulse/
 - Blog: {u}/blog/
 - Kontakt: {u}/kontakt-termin/
 
