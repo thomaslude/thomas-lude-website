@@ -1601,17 +1601,51 @@ def vortexkey_body():
     return landing_body(
         eyebrow="Kooperation mit VortexKey",
         h1="Verstehen, warum – und wissen, wohin",
-        lead="Manche Fragen lassen sich nicht allein mit dem Blick nach vorn beantworten. Bevor klar wird, wohin ein Weg führt, hilft es oft zu verstehen, warum bestimmte Muster überhaupt entstanden sind.",
+        lead="Manche Fragen lassen sich nicht allein mit dem Blick nach vorn beantworten. Bevor klar wird, wohin ein Weg führt, hilft es oft zu verstehen, warum bestimmte Muster überhaupt entstanden sind – und zu wissen: Dein Weg ist nicht festgeschrieben.",
         image="thomas-lude-ueber-thomas-kartenlegen",
         image_alt="Thomas Lude an seinem Kartentisch, konzentriert bei einer Kartenlegung",
         prose="""
-<h2>Woher ein Muster kommt</h2>
-<p>Muster, die sich immer wieder in deinem Leben zeigen, verstecken sich oft in blinden Flecken – Stellen, die man selbst am schwersten sieht. Genau hier setzt die Human-Design- und Aura-Analyse von <a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener">VortexKey</a> an: Sie zeigt, warum du bist, wie du bist, und woher bestimmte Verhaltensmuster kommen, die dir bisher vielleicht nicht bewusst waren.</p>
-<h2>Wohin sich das jetzt entwickelt</h2>
-<p>Meine Kartenlegung setzt an diesem Punkt an und führt weiter: Wohin entwickelt sich das jetzt konkret? Welche Entscheidung steht an, welches Zeitfenster ist relevant? Direkt, ehrlich und bodenständig – ohne esoterisches Theater.</p>
-<h2>Wer beide Schritte kombiniert</h2>
-<p>...hat nicht nur eine Standortbestimmung, sondern auch eine Richtung. Die VortexKey-Analyse und meine Kartenlegung bauen bewusst aufeinander auf: erst der Blick nach innen, dann der Blick nach vorn.</p>
-<p><a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener"><strong>Zur VortexKey-Analyse &rarr;</strong></a></p>
+<h2>Dein Weg ist nicht festgeschrieben</h2>
+<p>Vielleicht bist du nicht zufällig hier. Es gibt Phasen im Leben, in denen der bisherige Weg dich nicht mehr trägt – Beziehungen, Konflikte oder Entscheidungen wiederholen sich, oder da ist eine innere Unruhe, eine Frage, die dich schon lange begleitet.</p>
+<p>In meiner Beratung schaue ich mit dir auf die Entwicklungen, Entscheidungen und Möglichkeiten, die sich aus deiner gegenwärtigen Situation heraus zeigen. Doch Zukunft ist kein unveränderlicher Plan: Ein Weg kann sichtbar werden, eine Richtung sich zeigen – und trotzdem verändert sich alles in dem Moment, in dem du bewusst anders entscheidest oder handelst. Du bist nicht nur Beobachterin oder Beobachter deines Lebens, du gestaltest es mit.</p>
+
+<h2>Wenn alte Muster den Blick nach vorn prägen</h2>
+<p>Manchmal zeigt sich in einer Sitzung sehr deutlich, welche Richtung sich aus deinem bisherigen Weg ergibt – als würde eine vertraute Tür wieder zu ähnlichen Erfahrungen führen. Das ist keine Festlegung, sondern eine Einladung zur Klarheit: Sobald du erkennst, welche Muster dich bisher begleitet haben, entsteht neuer Handlungsspielraum.</p>
+<p>Meine Arbeit kann dir einen Blick auf die Möglichkeiten geben, die vor dir liegen. Sie ersetzt aber nicht deine eigene innere Arbeit – Veränderung beginnt dort, wo du bereit bist, Verantwortung für deinen nächsten Schritt zu übernehmen.</p>
+
+<h2>Eine ergänzende Empfehlung: VortexKey</h2>
+<p>Wenn du nicht nur nach vorn schauen, sondern auch besser verstehen möchtest, warum du heute an diesem Punkt stehst, empfehle ich dir ergänzend die Arbeit von <a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener">VortexKey</a>. Die VortexKey-Methode richtet den Blick auf das, was im bisherigen Leben oft unbemerkt mitgewirkt hat: wiederkehrende Muster, innere Konflikte und blinde Flecken. Sie bietet einen klaren, begleiteten Rahmen, um die eigenen Erfahrungen bewusster einzuordnen.</p>
+
+<div class="card-grid two">
+  <article class="card">
+    <div class="card-body">
+      <h3>Meine spirituelle Begleitung</h3>
+      <ul class="tick-list">
+        <li>Blick auf mögliche Entwicklungen und Weggabelungen</li>
+        <li>Spirituelle Impulse für deine gegenwärtigen Fragen</li>
+        <li>Orientierung für anstehende Entscheidungen</li>
+        <li>Neue Perspektiven auf das, was möglich werden kann</li>
+      </ul>
+    </div>
+  </article>
+  <article class="card">
+    <div class="card-body">
+      <h3>Begleitung mit VortexKey</h3>
+      <ul class="tick-list">
+        <li>Blick auf bisherige Muster, Prägungen und blinde Flecken</li>
+        <li>Strukturierte Reflexion des bisherigen Weges</li>
+        <li>Klarheit darüber, was dich bisher geprägt haben könnte</li>
+        <li>Bewusstere Grundlage für deine nächste Entscheidung</li>
+      </ul>
+    </div>
+  </article>
+</div>
+
+<p>Die Arbeit mit VortexKey kann vor einer Kartenlegung wertvoll sein, um innere Themen zu sortieren – oder danach, um einen Impuls tiefer in deinen Alltag zu übersetzen. Wer beide Schritte kombiniert, hat nicht nur eine Standortbestimmung, sondern auch eine Richtung: erst der Blick nach innen, dann der Blick nach vorn.</p>
+<p><a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener"><strong>Mehr über die VortexKey-Methode erfahren &rarr;</strong></a></p>
+
+<h2>Die Zukunft entsteht aus deinem nächsten Schritt</h2>
+<p>Ich kann mit dir auf die Wege schauen, die sich aus deinem heutigen Leben heraus zeigen, und dir Impulse für mögliche Entwicklungen geben. Welche Tür du öffnest, bleibt jedoch deine Entscheidung.</p>
 """,
         whatsapp_msg="Hallo Thomas, ich interessiere mich für die Kombination aus VortexKey-Analyse und Kartenlegung.",
         cta_title="Erst Klarheit, dann Richtung.",
