@@ -1831,6 +1831,16 @@ def kompass_body():
   </div>
 </section>
 
+<section class="k-cream" style="text-align:center">
+  <div class="k-container" style="max-width:520px">
+    <span class="k-label">Der Kompass im Bundle</span>
+    <h2>Beide zusammen, ein Preis.</h2>
+    <p style="margin:16px 0 6px"><span style="font-size:40px;font-weight:700;color:#1a1a1a">309&nbsp;€</span> <span style="font-size:16px;color:#999;text-decoration:line-through">329&nbsp;€</span></p>
+    <p style="font-size:14px;color:#666;margin-bottom:24px">60 Min. Kristina + 45 Min. Thomas + gemeinsames Abschlussgespräch, schriftliche Zusammenfassung und 2 Wochen WhatsApp-Begleitung. Einzeln gebucht: 180&nbsp;€ (Kristina) + 149&nbsp;€ (Thomas).</p>
+    <a href="https://vortexkey.de/" class="k-btn" target="_blank" rel="noopener">Kompass anfragen →</a>
+  </div>
+</section>
+
 <section class="k-dark" style="text-align:center">
   <div class="k-container" style="max-width:640px">
     <span class="k-label" style="color:#d4a849">Neugierig?</span>
