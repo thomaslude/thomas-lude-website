@@ -73,6 +73,7 @@ IMG_META = {
     "blog-geister-die-ich-rief":                        (1536, 1024),
     "blog-verlust-wiedergeburt-sinnfragen":             (1536, 1024),
     "blog-karmische-aufgaben":                          (1536, 1024),
+    "vortexkey-thomas-lude-weiche":                     (1672, 941),
 }
 
 def img(base, alt, sizes="(max-width: 768px) 100vw, 50vw", loading="lazy", fetchpriority="", css_class=""):
@@ -1598,6 +1599,12 @@ def tier_body():
 # VORTEXKEY – Kooperation
 # ----------------------------------------------------------------------------
 def vortexkey_body():
+    weiche_image = img(
+        "vortexkey-thomas-lude-weiche",
+        "Zugstrecke mit einer Weiche vor Bergpanorama und See – Sinnbild für einen neuen Weg, sobald der alte verstanden ist",
+        sizes="(max-width: 1040px) 100vw, 1040px",
+        loading="lazy",
+    )
     return landing_body(
         eyebrow="Kooperation mit VortexKey",
         h1="Verstehen, warum – und wissen, wohin",
@@ -1643,7 +1650,21 @@ def vortexkey_body():
 
 <p>Die Arbeit mit VortexKey kann vor einer Kartenlegung wertvoll sein, um innere Themen zu sortieren – oder danach, um einen Impuls tiefer in deinen Alltag zu übersetzen. Wer beide Schritte kombiniert, hat nicht nur eine Standortbestimmung, sondern auch eine Richtung: erst der Blick nach innen, dann der Blick nach vorn.</p>
 <p><a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener"><strong>Mehr über die VortexKey-Methode erfahren &rarr;</strong></a></p>
+""" + """
+<section class="article-figure">
+  <div class="container">
+    <figure>
+      %s
+      <figcaption>Eine neue Weiche wird sichtbar, sobald der alte Weg verstanden ist.</figcaption>
+    </figure>
+  </div>
+</section>
 
+<h2>Wie ein Zug, der die Weiche wechselt</h2>
+<p>Der bisherige Weg lässt sich mit einer Zugfahrt vergleichen: Du fährst auf vertrauten Gleisen, mit den Menschen und Gewohnheiten, die gerade mit dir unterwegs sind. VortexKey hilft dir zu erkennen, wo es in deinem Leben Weichen gibt – und warum du bisher genau diesen Weg gefahren bist.</p>
+<p>Sobald diese Erkenntnis da ist und du bereit bist, sie anzunehmen, stellt sich die Weiche oft wie von selbst. Ein neuer Weg wird möglich. Manche Weggefährten steigen aus, andere kommen neu dazu – das gehört zu jeder echten Veränderung dazu.</p>
+<p>Genau an diesem Punkt setze ich an: Ich schaue mit dir auf die Perspektiven, die sich auf dem neuen Gleis eröffnen können, und gebe dir Impulse für den Weg, der jetzt vor dir liegt.</p>
+""" % weiche_image + """
 <h2>Die Zukunft entsteht aus deinem nächsten Schritt</h2>
 <p>Ich kann mit dir auf die Wege schauen, die sich aus deinem heutigen Leben heraus zeigen, und dir Impulse für mögliche Entwicklungen geben. Welche Tür du öffnest, bleibt jedoch deine Entscheidung.</p>
 """,
