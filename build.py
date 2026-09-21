@@ -1701,7 +1701,7 @@ def kompass_body():
     <h1>Du siehst die Richtung.<br>Aber verstehst du auch<br><em>dein Gleis?</em></h1>
     <p>Du kommst zu Thomas, weil du wissen willst, wohin dein Weg führt. Er zeigt dir die Weichen, die sich öffnen. Und: Je klarer du verstehst, wer du wirklich bist, desto gezielter kann er mit den Karten ansetzen. Deshalb arbeitet Thomas mit Kristina zusammen.</p>
     <div>
-      <a href="https://vortexkey.de/wegweiser/" class="k-btn" target="_blank" rel="noopener">VortexKey entdecken →</a>
+      <a href="https://vortexkey.de/kompass/" class="k-btn" target="_blank" rel="noopener">VortexKey entdecken →</a>
       <a href="#metapher" class="k-btn k-btn-outline">Wie das zusammenspielt</a>
     </div>
   </div>
@@ -1837,7 +1837,7 @@ def kompass_body():
     <h2>Beide zusammen, ein Preis.</h2>
     <p style="margin:16px 0 6px"><span style="font-size:40px;font-weight:700;color:#1a1a1a">309&nbsp;€</span> <span style="font-size:16px;color:#999;text-decoration:line-through">329&nbsp;€</span></p>
     <p style="font-size:14px;color:#666;margin-bottom:24px">60 Min. Kristina + 45 Min. Thomas + gemeinsames Abschlussgespräch, schriftliche Zusammenfassung und 2 Wochen WhatsApp-Begleitung. Einzeln gebucht: 180&nbsp;€ (Kristina) + 149&nbsp;€ (Thomas).</p>
-    <a href="https://vortexkey.de/wegweiser/" class="k-btn" target="_blank" rel="noopener">Kompass anfragen →</a>
+    <a href="https://vortexkey.de/kompass/" class="k-btn" target="_blank" rel="noopener">Kompass anfragen →</a>
   </div>
 </section>
 
@@ -1847,7 +1847,7 @@ def kompass_body():
     <h2 style="color:#fff;margin-top:8px">Lass uns deine Weichen finden.</h2>
     <p style="font-size:17px;color:rgba(255,255,255,.8);line-height:1.8;margin:24px 0">Der Kompass ist mehr als eine Kartenlegung. Er ist mehr als ein Human-Design-Reading. Er ist die Kombination beider Blickwinkel.</p>
     <div style="margin:32px 0">
-      <a href="https://vortexkey.de/wegweiser/" class="k-btn" target="_blank" rel="noopener">Zu VortexKey →</a>
+      <a href="https://vortexkey.de/kompass/" class="k-btn" target="_blank" rel="noopener">Zu VortexKey →</a>
       <a href="/kontakt-termin/" class="k-btn k-btn-outline">Termin bei Thomas</a>
     </div>
     <p style="color:rgba(255,255,255,.4);font-size:13px;margin-top:24px">Du bleibst bei Thomas als Kartenleger. Der Kompass ergänzt seine Arbeit — er ersetzt sie nicht.</p>
@@ -1886,7 +1886,7 @@ def ergaenzende_impulse_body():
 <p>Ich arbeite mit den Karten – direkt, bodenständig und ohne esoterisches Theater. Für die meisten Fragen reicht das völlig aus. Wer zusätzlich noch tiefer schauen möchte, findet hier zwei Anknüpfungspunkte, die ich für sinnvoll halte.</p>
 
 <h3>VortexKey – Muster und blinde Flecken verstehen</h3>
-<p>Wenn du nicht nur nach vorn schauen, sondern auch besser verstehen möchtest, warum du heute an diesem Punkt stehst, empfehle ich dir ergänzend die Arbeit von <a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener">VortexKey</a>. Die VortexKey-Methode richtet den Blick auf das, was im bisherigen Leben oft unbemerkt mitgewirkt hat: wiederkehrende Muster, innere Konflikte und blinde Flecken. Sie bietet einen klaren, begleiteten Rahmen, um die eigenen Erfahrungen bewusster einzuordnen.</p>
+<p>Wenn du nicht nur nach vorn schauen, sondern auch besser verstehen möchtest, warum du heute an diesem Punkt stehst, empfehle ich dir ergänzend die Arbeit von <a href="https://vortexkey.de/kompass/" target="_blank" rel="noopener">VortexKey</a>. Die VortexKey-Methode richtet den Blick auf das, was im bisherigen Leben oft unbemerkt mitgewirkt hat: wiederkehrende Muster, innere Konflikte und blinde Flecken. Sie bietet einen klaren, begleiteten Rahmen, um die eigenen Erfahrungen bewusster einzuordnen.</p>
 
 <div class="card-grid two">
   <article class="card">
@@ -1914,7 +1914,7 @@ def ergaenzende_impulse_body():
 </div>
 
 <p>Die Arbeit mit VortexKey kann vor einer Kartenlegung wertvoll sein, um innere Themen zu sortieren – oder danach, um einen Impuls tiefer in deinen Alltag zu übersetzen. Wer beide Schritte kombiniert, hat nicht nur eine Standortbestimmung, sondern auch eine Richtung: erst der Blick nach innen, dann der Blick nach vorn.</p>
-<p><a href="https://vortexkey.de/wegweiser/" target="_blank" rel="noopener"><strong>Mehr über die VortexKey-Methode erfahren &rarr;</strong></a><br>
+<p><a href="https://vortexkey.de/kompass/" target="_blank" rel="noopener"><strong>Mehr über die VortexKey-Methode erfahren &rarr;</strong></a><br>
 <a href="/vortexkey-kompass/"><strong>Warum die Zusammenarbeit Sinn ergibt – Erklärung von VortexKey &rarr;</strong></a></p>
 """ + """
 <section class="article-figure">
