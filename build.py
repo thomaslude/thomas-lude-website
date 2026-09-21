@@ -555,13 +555,16 @@ def home_body():
 
 <!-- ERGÄNZENDE IMPULSE -->
 <section class="section" id="ergaenzende-impulse">
-  <div class="container prose" style="max-width:760px;text-align:center;">
-    <p class="eyebrow">Ergänzende Impulse</p>
-    <h2>Manchmal hilft ein zweiter Blick.</h2>
-    <p>Für manche Fragen reicht ein Termin. Für andere – eine berufliche Weichenstellung, ein wiederkehrendes Muster, eine Entscheidung mit langer Tragweite – lohnt sich mitunter eine zweite, ergänzende Perspektive. Dafür verweise ich, wo es passt, auch auf ausgewählte andere Systeme.</p>
-      <div class="cta-row" style="justify-content:center;">
+  <div class="container split reverse">
+    <div>
+      <p class="eyebrow">Ergänzende Impulse</p>
+      <h2>Manchmal hilft ein zweiter Blick.</h2>
+      <p>Für manche Fragen reicht ein Termin. Für andere – eine berufliche Weichenstellung, ein wiederkehrendes Muster, eine Entscheidung mit langer Tragweite – lohnt sich mitunter eine zweite, ergänzende Perspektive. Dafür verweise ich, wo es passt, auch auf ausgewählte andere Systeme.</p>
+      <div class="cta-row">
         <a class="btn btn-gold" href="/ergaenzende-impulse/">Ergänzende Impulse ansehen →</a>
       </div>
+    </div>
+    <div class="split-media"><img src="/assets/img/kompass-weggabelung-aussicht.webp" alt="Zug fährt auf eine Gleisgabelung zu, während jemand von einem Aussichtspunkt aus über das Tal blickt"></div>
   </div>
 </section>
 
